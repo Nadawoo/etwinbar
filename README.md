@@ -1,5 +1,6 @@
 # What is EtwinBar?
-Etwinbar is a part of the Eternaltwin project (https://eternaltwin.org/)
+Etwinbar is a part of the Eternaltwin project (https://eternaltwin.org/).
+
 Etwinbar allows you to insert on your own site a footer common to all of the Eternaltwin games.
 
 # How to install the Eternaltwin footer on my site?
@@ -11,7 +12,7 @@ Put the **/etwinbar** folder in the appropriate place of your site. It can be th
 ```html
 <section id="etwinFooter"></section>
 ```
-(This is where the list of the games will be added.)
+(This is where the list of games will be added.)
 
 **Insert this line inside the &lt;head&gt; of your page :**
 ```html
