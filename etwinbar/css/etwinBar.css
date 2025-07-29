@@ -1,0 +1,25 @@
+#etwinFooter {
+	font-family:arial, sans-serif;
+	font-size:0.8em;
+	border:1px solid #2c255b;
+}
+
+#etwinFooter h2 {
+	margin:0;
+	padding:0.2em;
+	text-align:center;
+	background:#2c255b;
+	color:white;
+	font-variant:small-caps;
+}
+#etwinFooter ul {
+	display:flex;
+	justify-content:center;
+	flex-wrap:wrap;
+	gap:1em;
+	padding:0 1em;
+	list-style-type:none;
+}
+#etwinFooter li a {
+	white-space:nowrap;
+}
