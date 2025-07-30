@@ -78,7 +78,7 @@ footer li {
 	padding-bottom:10px;
 }
 
-.wrapper {
+#etwinFooter {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
