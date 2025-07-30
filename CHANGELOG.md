@@ -3,7 +3,10 @@ This changelog is formatted as recommended by [Keep a Changelog](https://keepach
 
 ## [Unreleased]
 ### Added
-- [a11y] Mention that the links open in a new tab 
+- [a11y] Mention that the links open in a new tab
+
+### Changed
+- [Perf] Optimized generation for the list of sites
 
 ### Security 
 - Add rel="noopener" attribute on links opening in a new tab

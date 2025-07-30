@@ -51,15 +51,31 @@ function addEtwinFooter() {
 	];
 
 	const etwinFooter = document.querySelector('#etwinFooter');
-	const sitesContainer = document.createElement('ul');
 	
 	etwinFooter.innerHTML = `<h2>Autres jeux de Eternaltwin</h2>`;
-	etwinFooter.appendChild(sitesContainer);
 	
 	// Write each site in a new <li>
+	const sitesContainer = document.createElement('ul');
+	etwinFooter.appendChild(sitesContainer);
+	renderSitesList(sites, sitesContainer);
+}
+
+
+/**
+ * Write each site in a new <li>
+ * 
+ * @param {Array} sites - Array of objects with { url, name, description }
+ * @param {HTMLElement} containerElement - The DOM element to render the list into
+ */
+function renderSitesList(sites, containerElement) {
+	
+	const fragment = document.createDocumentFragment();
+
 	sites.forEach(site => {
-		const newSiteItem = document.createElement('li');		
-		newSiteItem.innerHTML = `<a href="${site.url}" title="${site.description} (S'ouvre dans un nouvel onglet)" target="_blank" rel="noopener">${site.name}</a>`;		
-		sitesContainer.appendChild(newSiteItem);
+		const newSiteItem = document.createElement('li');
+		newSiteItem.innerHTML = `<a href="${site.url}" title="${site.description} (S'ouvre dans un nouvel onglet)" target="_blank" rel="noopener">${site.name}</a>`;
+		fragment.appendChild(newSiteItem);
 	});
+
+	containerElement.appendChild(fragment);
 }
