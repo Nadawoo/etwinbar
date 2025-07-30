@@ -1,7 +1,10 @@
 # Changelog for EtwinBar
+This changelog is formatted as recommended by [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
-# V. 1.1
-* Add rel="noopener" attribute on links opening in a new tab (safety)
+## [Unreleased]
+### Security 
+- Add rel="noopener" attribute on links opening in a new tab
  
-# V. 1
-* EtwinBar can insert an HTML footer containing the list of Eternaltwin's games.
+## [1.0] - 2025-07-29
+### Added
+- EtwinBar can insert an HTML footer containing the list of Eternaltwin's games.
