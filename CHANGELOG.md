@@ -1,7 +1,7 @@
 # Changelog for EtwinBar
 This changelog is formatted as recommended by [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
-## [Unreleased]
+## [1.1] - 2025-07-30
 ### Added
 - [a11y] Mention that the links open in a new tab
 
