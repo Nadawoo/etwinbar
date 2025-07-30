@@ -5,9 +5,9 @@ addFullEtwinFooter();
 /**
  * Adds the links to the Eternaltwin games in the footer of the page
  */
-async function addEtwinSites() {
+async function addEtwinGames() {
 	
-	const sites = [
+	const games = [
 		{
 		name: "MyHordes",
 		url: "https://myhordes.eu/jx/public/welcome",
@@ -49,12 +49,10 @@ async function addEtwinSites() {
 		description: "Le jeu de mots relax jouable en toute situation !"
 		}
 	];
-
-	const etwinFooter = await document.querySelector('#etwinFooter .games');
+	
 	// Write each site in a new <li>
-	const sitesContainer = document.createElement('ul');
-	etwinFooter.appendChild(sitesContainer);
-	renderSitesList(sites, sitesContainer);
+	const gamesContainer = await document.querySelector('#etwinFooter .games ul');
+	renderGamesList(games, gamesContainer);
 }
 
 
@@ -90,23 +88,23 @@ async function addFullEtwinFooter() {
 	const clone = template.content.cloneNode(true);
 	etwinFooter.appendChild(clone);
 	
-	addEtwinSites();
+	addEtwinGames();
 }
 
 
 /**
- * Write each site in a new <li>
+ * Write each games in a new <li>
  * 
- * @param {Array} sites - Array of objects with { url, name, description }
+ * @param {Array} games - Array of objects with { url, name, description }
  * @param {HTMLElement} containerElement - The DOM element to render the list into
  */
-function renderSitesList(sites, containerElement) {
+function renderGamesList(games, containerElement) {
 	
 	const fragment = document.createDocumentFragment();
 
-	sites.forEach(site => {
+	games.forEach(game => {
 		const newSiteItem = document.createElement('li');
-		newSiteItem.innerHTML = `<a href="${site.url}" title="${site.description} (S'ouvre dans un nouvel onglet)" target="_blank" rel="noopener">${site.name}</a>`;
+		newSiteItem.innerHTML = `<a href="${game.url}" title="${game.description} (S'ouvre dans un nouvel onglet)" target="_blank" rel="noopener">${game.name}</a>`;
 		fragment.appendChild(newSiteItem);
 	});
 
