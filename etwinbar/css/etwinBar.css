@@ -33,7 +33,7 @@ body {
 	font-family: Segoe UI, Lucida Grande, Trebuchet MS, Arial, lucida sans unicode, sans-serif;
 }
 
-footer {
+#etwinFooter {
 	margin: auto 0 0 0;
 	font-size: 0.875rem;
 	line-height: 1.15rem;
@@ -41,40 +41,40 @@ footer {
 	color: #701000;
 }
 
-footer p:not(.box) {
+#etwinFooter p:not(.box) {
 	margin: 0;
 	padding: 0;
 }
 
-footer a,
-footer button {
+#etwinFooter a,
+#etwinFooter button {
 	color: #c54508;
 }
-footer a {
+#etwinFooter a {
 	white-space:nowrap;
 }
 
-footer a:hover,
-footer a:focus,
-footer a:active,
-footer button:hover,
-footer button:focus,
-footer button:active {
+#etwinFooter a:hover,
+#etwinFooter a:focus,
+#etwinFooter a:active,
+#etwinFooter button:hover,
+#etwinFooter button:focus,
+#etwinFooter button:active {
 	color: #701000;
 }
 
-footer h3 {
+#etwinFooter h3 {
 	margin:0 auto 10px auto;
 	text-align:center;
 	font-size: 1em;
 }
 
-footer ul {
+#etwinFooter ul {
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
 }
-footer li {
+#etwinFooter li {
 	padding-bottom:10px;
 }
 
@@ -90,7 +90,7 @@ footer li {
 	background-position: bottom center;
 }
 
-.box {
+#etwinFooter .box {
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -107,22 +107,22 @@ footer li {
 	border-bottom-width: 4px;
 }
 
-.box.small {
+#etwinFooter .box.small {
 	flex: 1 1 40%;
 }
-.box.wide {
+#etwinFooter .box.wide {
 	max-width:712px;
 }
 /* Hack to force the next flex block to go to the next line */
 #etwinFooter .break {
 	flex-basis:100%;
 }
-.box.description {
+#etwinFooter .box.description {
 	order: 0;
 	padding-top: 2.2em;
 }
 
-.etwin-logo {
+#etwinFooter .etwin-logo {
 	position: absolute;
 	width: 63px;
 	height: 55px;
@@ -131,50 +131,50 @@ footer li {
 	transform: translate(-50%, -60%);
 }
 
-.etwin-logo .contour {
+#etwinFooter .etwin-logo .contour {
 	fill: #bd7e49;
 }
 
-.etwin-logo .white {
+#etwinFooter .etwin-logo .white {
 	fill: white;
 }
 
-.etwin-logo .shadow {
+#etwinFooter .etwin-logo .shadow {
 	fill: #f1d1b1; /* lighten(#bd7e49, ~39%) */
 }
 
-.status {
+#etwinFooter .status {
 	margin-top: 1em;
 	border-top: 2px solid #bd7e49;
 	padding-top: 1em;
 	width: 100%;
 }
 
-.status a {
+#etwinFooter .status a {
 	text-decoration: none;
 }
 
-.status svg {
+#etwinFooter .status svg {
 	height: 0.9em;
 	margin-right: 0.3em;
 }
 
-.versionId {
+#etwinFooter .versionId {
 	flex-direction: row;
 }
 
-.versionId span {
+#etwinFooter .versionId span {
 	margin-right: 1.6em;
 }
 
 @media only screen and (min-width: 768px) {
-	.box {
+	#etwinFooter .box {
 		order: initial;
 		min-width: 0;
 		max-width: 392px;
 	}
 
-	.box.small {
+	#etwinFooter .box.small {
 		max-width: 152px;
 	}
 }
