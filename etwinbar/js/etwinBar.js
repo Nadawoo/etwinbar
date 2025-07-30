@@ -1,6 +1,6 @@
 
+addFullEtwinFooter();
 addEtwinFooter();
-
 
 /**
  * Adds the links to the Eternaltwin games in the footer of the page
@@ -58,6 +58,40 @@ function addEtwinFooter() {
 	const sitesContainer = document.createElement('ul');
 	etwinFooter.appendChild(sitesContainer);
 	renderSitesList(sites, sitesContainer);
+}
+
+
+/**
+ * Load an HTML <template>
+ */
+async function loadTemplate(url, templateId) {
+
+	const response = await fetch(url);
+	if (!response.ok) throw new Error(`Failed to load template file: ${response.status}`);
+	const text = await response.text();
+
+	// Create a temporary element to parse the HTML
+	const tempDiv = document.createElement('div');
+	tempDiv.innerHTML = text;
+	// Extracts the HTML of the template
+	const template = tempDiv.querySelector(templateId);
+	if (!template) throw new Error('Template ID not found inside the file');
+
+	return template;
+}
+
+
+/**
+ * Insert the full footer of Eternaltwin (with the Piouz logo,
+ * "Thanks to" block, "Devs" block, etc.)
+ */
+async function addFullEtwinFooter() {
+	
+	const template = await loadTemplate("etwinbar/templates/fullFooter.htm", "#tplFullFooter");
+	
+	const etwinFooter = document.querySelector('#etwinFooter');
+	const clone = template.content.cloneNode(true);
+	etwinFooter.appendChild(clone);
 }
 
 
