@@ -59,7 +59,7 @@ function addEtwinFooter() {
 	// Write each site in a new <li>
 	sites.forEach(site => {
 		const newSiteItem = document.createElement('li');		
-		newSiteItem.innerHTML = `<a href="${site.url}" title="${site.description}" target="_blank">${site.name}</a>`;		
+		newSiteItem.innerHTML = `<a href="${site.url}" title="${site.description}" target="_blank" rel="noopener">${site.name}</a>`;		
 		sitesContainer.appendChild(newSiteItem);
 	});
 }
