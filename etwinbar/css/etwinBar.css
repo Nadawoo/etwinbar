@@ -121,7 +121,13 @@ footer ul {
 .box.small {
 	flex: 1 1 40%;
 }
-
+.box.wide {
+	max-width:712px;
+}
+/* Hack to force the next flex block to go to the next line */
+#etwinFooter .break {
+	flex-basis:100%;
+}
 .box.description {
 	order: 0;
 	padding-top: 2.2em;

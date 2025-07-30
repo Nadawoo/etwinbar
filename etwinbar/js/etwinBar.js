@@ -1,11 +1,11 @@
 
 addFullEtwinFooter();
-addEtwinFooter();
+
 
 /**
  * Adds the links to the Eternaltwin games in the footer of the page
  */
-function addEtwinFooter() {
+async function addEtwinSites() {
 	
 	const sites = [
 		{
@@ -50,10 +50,7 @@ function addEtwinFooter() {
 		}
 	];
 
-	const etwinFooter = document.querySelector('#etwinFooter');
-	
-	etwinFooter.innerHTML = `<h2>Autres jeux de Eternaltwin</h2>`;
-	
+	const etwinFooter = await document.querySelector('#etwinFooter .games');
 	// Write each site in a new <li>
 	const sitesContainer = document.createElement('ul');
 	etwinFooter.appendChild(sitesContainer);
@@ -92,6 +89,8 @@ async function addFullEtwinFooter() {
 	const etwinFooter = document.querySelector('#etwinFooter');
 	const clone = template.content.cloneNode(true);
 	etwinFooter.appendChild(clone);
+	
+	addEtwinSites();
 }
 
 
