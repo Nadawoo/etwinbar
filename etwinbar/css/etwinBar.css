@@ -41,9 +41,8 @@ body {
 	color: #701000;
 }
 
-#etwinFooter p:not(.box) {
-	margin: 0;
-	padding: 0;
+#etwinFooter p {
+	margin: 5px 0;
 }
 
 #etwinFooter a,
