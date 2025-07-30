@@ -1,7 +1,7 @@
 # Changelog for EtwinBar
 This changelog is formatted as recommended by [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
-## [Unreleased]
+## [2.0] - 2025-07-30
 ### Added
 - Can insert the full footer of Eternaltwin (with the Piouz logo, "Thanks to" block and "Devs" block)
 
