@@ -1,32 +1,14 @@
-#etwinFooter {
-	font-family:arial, sans-serif;
-	font-size:0.8em;
-	/* border:1px solid #2c255b; */
-}
 
-#etwinFooter h2 {
-	margin:0;
-	padding:0.2em;
-	text-align:center;
-	background:#2c255b;
-	color:white;
-	font-variant:small-caps;
-}
-#etwinFooter ul {
+#etwinFooter .games ul {
+	margin:auto;
 	display:flex;
 	justify-content:center;
 	flex-wrap:wrap;
-	gap:1em;
-	padding:0 1em;
-	list-style-type:none;
+	column-gap:1em;
 }
-#etwinFooter li a {
-	white-space:nowrap;
-}
-
 
 /*
- * Full footer (with the Piouz log of Eternaltwin,
+ * Full footer (with the Piouz logo of Eternaltwin,
  * "Thanks to" block, "Devs" block, etc.)
  */
 html {
@@ -68,6 +50,9 @@ footer a,
 footer button {
 	color: #c54508;
 }
+footer a {
+	white-space:nowrap;
+}
 
 footer a:hover,
 footer a:focus,
@@ -79,14 +64,18 @@ footer button:active {
 }
 
 footer h3 {
+	margin:0 auto 10px auto;
+	text-align:center;
 	font-size: 1em;
-	margin: 0 0 0.25em 0;
 }
 
 footer ul {
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
+}
+footer li {
+	padding-bottom:10px;
 }
 
 .wrapper {
