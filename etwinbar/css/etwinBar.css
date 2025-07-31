@@ -1,12 +1,3 @@
-
-#etwinFooter .games ul {
-	margin:auto;
-	display:flex;
-	justify-content:center;
-	flex-wrap:wrap;
-	column-gap:1em;
-}
-
 /*
  * Full footer (with the Piouz logo of Eternaltwin,
  * "Thanks to" block, "Devs" block, etc.)
@@ -112,6 +103,16 @@ body {
 #etwinFooter .box.wide {
 	max-width:712px;
 }
+#etwinFooter .box.wide ul {
+	margin:auto;
+	display:flex;
+	justify-content:center;
+	flex-wrap:wrap;
+	column-gap:1em;
+}
+#etwinFooter .box.noborder {
+	border:none;
+}
 /* Hack to force the next flex block to go to the next line */
 #etwinFooter .break {
 	flex-basis:100%;
@@ -146,13 +147,7 @@ body {
 	margin-top: 1em;
 	border-top: 2px solid #bd7e49;
 	padding-top: 1em;
-	width: 100%;
 }
-
-#etwinFooter .status a {
-	text-decoration: none;
-}
-
 #etwinFooter .status svg {
 	height: 0.9em;
 	margin-right: 0.3em;
