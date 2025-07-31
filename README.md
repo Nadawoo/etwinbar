@@ -3,6 +3,11 @@ Etwinbar is a part of the Eternaltwin project (https://eternaltwin.org/).
 
 Etwinbar allows you to insert on your own site a footer common to all of the Eternaltwin games.
 
+- ✔️ Only 3 lines of HTML required to install it on you site
+- ✔️ Contains all the useful informations and links
+- ✔️ Responsive
+- ✔️ Doesn't break your CSS
+
 # How to install the Eternaltwin footer on my site?
 ## 1) Install the EtwinBar library
 Put the **/etwinbar** folder in the appropriate place of your site. It can be the root or a subfolder.
@@ -55,4 +60,4 @@ The CSS provided with EtwinBar is minimalistic, as we assume you want to apply s
 If you want to add or change the styles, put your rules in your own CSS files. Don't put them in the CSS files of EtwinBar, as they would be erased in case of update.
 
 # Is there a risk that EtwinBar breaks the CSS of my site?
-No. All the styles added by the script are prefixed with an #etwinbar ID, so they are in a closed scope and can't interfere with your styles. (Unless your site already uses a #etwinbar ID, which would be very improbable!)
+No. All the styles added by the script are prefixed with an #etwinFooter ID, so they are in a closed scope and can't interfere with your styles. (Unless your site already uses this ID, which would be very improbable!)
