@@ -19,6 +19,11 @@ async function addEtwinGames() {
 		description: "Vous êtes sur le point de vous réveiller à bord du Daedalus avec 15 autres rebelles. Comme vous, ils fuient le Mush, un champignon parasite qui ravage la Terre et menace l'Humanité."
 		},
 		{
+		name: "MyBrute",
+		url: "https://labrute.eternaltwin.org",
+		description: "Un jeu de combat gratuit : forme le combattant le plus puissant de tous les temps !"
+		},
+		{
 		name: "DinoRPG",
 		url: "https://dinorpg.eternaltwin.org/",
 		description: "Élevez vos dinoz dans un jeu d'aventure extraordinaire !"
