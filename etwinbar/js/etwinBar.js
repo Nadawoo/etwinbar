@@ -24,6 +24,21 @@ async function addEtwinGames() {
 		description: "Élevez vos dinoz dans un jeu d'aventure extraordinaire !"
 		},
 		{
+		name: "EternalKingdom",
+		url: "https://kingdom.eternaltwin.org/",
+		description: "Faites prospérer votre capitale. Recrutez des soldats et devenez... Empereur !"
+		},
+		{
+		name: "Directquiz",
+		url: "https://www.directquiz.org/",
+		description: "Mettez votre culture à rude épreuve dans Direct Quiz, le jeu de quiz le plus déjanté du web !"
+		},
+		{
+		name: "Dinocard Rebirth",
+		url: "https://dinocard.eternaltwin.org/",
+		description: "Dinocard Rebirth est la re-création du jeu original Dinocard de Motion Twin. Il contient déjà 150 cartes jouables !"
+		},
+		{
 		name: "Neoparc",
 		url: "https://neoparc.eternaltwin.org/",
 		description: "Combattez d'autres Dinoz et gagnez ainsi petit à petit de l'expérience lors de combats sans merci !"
@@ -34,19 +49,19 @@ async function addEtwinGames() {
 		description: "Plus de 200 niveaux ! Une grande variété d'ennemis très très méchants !"
 		},
 		{
-		name: "Eternal Kingdom",
-		url: "https://kingdom.eternaltwin.org/",
-		description: "Faites prospérer votre capitale. Recrutez des soldats et devenez... Empereur !"
-		},
-		{
-		name: "Directquiz",
-		url: "https://www.directquiz.org/",
-		description: "Mettez votre culture à rude épreuve dans Direct Quiz, le jeu de quiz le plus déjanté du web !"
-		},
-		{
 		name: "ePopotamo",
 		url: "https://epopotamo.eternaltwin.org/",
 		description: "Le jeu de mots relax jouable en toute situation !"
+		},
+		{
+		name: "AlphaBounce",
+		url: "https://alphabounce.eternaltwin.org",
+		description: "AlphaBounce est un casse-briques dans lequel vous êtes un prisonnier condamné à miner dans l'espace pour l'éternité. Peut-être parviendrez-vous à rentrer à la maison ?"
+		},
+		{
+		name: "Interwheel",
+		url: "https://interwheel.styve-simonneau.fr/",
+		description: "Grimpez de roue en roue pour échapper à l'eau montante !"
 		}
 	];
 	

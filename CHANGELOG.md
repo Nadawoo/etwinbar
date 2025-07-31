@@ -1,6 +1,10 @@
 # Changelog for EtwinBar
 This changelog is formatted as recommended by [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
+## Unreleased
+### Added
+- Add the missing links for Alphabounce, Dinocard and Interwheel
+
 ## [3.0] - 2025-07-31
 ### Modified
 - Rewording of the texts to make them generic and include all useful links
