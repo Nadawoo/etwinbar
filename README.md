@@ -53,3 +53,6 @@ You can find a complete example of implementation in the **demo.htm** page.
 The CSS provided with EtwinBar is minimalistic, as we assume you want to apply styles in accordance with the design of your site.
 
 If you want to add or change the styles, put your rules in your own CSS files. Don't put them in the CSS files of EtwinBar, as they would be erased in case of update.
+
+# Is there a risk that EtwinBar breaks the CSS of my site?
+No. All the styles added by the script are prefixed with an #etwinbar ID, so they are in a closed scope and can't interfere with your styles. (Unless your site already uses a #etwinbar ID, which would be very improbable!)
