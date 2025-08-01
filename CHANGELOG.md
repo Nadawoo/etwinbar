@@ -1,7 +1,7 @@
 # Changelog for EtwinBar
 This changelog is formatted as recommended by [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
-## Unreleased
+## [4.0] - 2025-08-01
 ### Added
 - Customization: The user can hide blocks of his choice
 
