@@ -1,16 +1,16 @@
 # Changelog for EtwinBar
 This changelog is formatted as recommended by [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
-## Unreleased
+## [5.0] - 2025-08-01
 ### Added
-- The user can customise the styles of the footer (background color, text color...)
+-  [Customization] The user can change the styles of the footer (background color, text color...)
 
 ### Modified
 - Add link to the wiki in the main text block
 
 ## [4.0] - 2025-08-01
 ### Added
-- Customization: The user can hide blocks of his choice
+- [Customization] The user can hide blocks of his choice
 
 ### Modified
 - Add the missing links for Alphabounce, Dinocard and Interwheel
