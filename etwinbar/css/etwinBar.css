@@ -58,6 +58,12 @@ html {
 	padding-bottom:10px;
 }
 
+#etwinFooter hr {
+	width:100%;
+	margin:1em 0;
+	border:1px solid #bd7e49;
+}
+
 #etwinFooter {
 	display: flex;
 	flex-direction: row;
@@ -117,7 +123,6 @@ html {
 	left: 50%;
 	transform: translate(-50%, -60%);
 }
-
 #etwinFooter .etwin-logo .contour {
 	fill: #bd7e49;
 }
@@ -130,11 +135,6 @@ html {
 	fill: #f1d1b1; /* lighten(#bd7e49, ~39%) */
 }
 
-#etwinFooter .status {
-	margin-top: 1em;
-	border-top: 2px solid #bd7e49;
-	padding-top: 1em;
-}
 #etwinFooter .status svg {
 	height: 0.9em;
 	margin-right: 0.3em;

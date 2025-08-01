@@ -134,6 +134,9 @@ function applyCustomStyles() {
 			border-color: ${dataset.bordercolor};
 			color: ${dataset.textcolor};
 		}
+		#etwinFooter hr {
+			border-color: ${dataset.bordercolor};
+		}
 		#etwinFooter a {
 			color: ${dataset.linkcolor};
 		}

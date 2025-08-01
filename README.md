@@ -66,6 +66,7 @@ Allowed values :
 - devs : The "Staff/Équipe" block
 - thanks : The "Thanks to" block
 - description : The main block with the logo
+- alpha : The alert about the alpha version in the main block
 - games : The list of other games
 - legal : The links to the legal mentions
 
