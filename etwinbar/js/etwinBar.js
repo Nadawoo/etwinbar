@@ -114,6 +114,38 @@ async function addFullEtwinFooter() {
 	// Hide the blocks the user doesn't want
 	let hiddenBlocks = parseDatasetList(document.querySelector("#etwinFooter"), "hiddenblocks");	
 	hideBlocks(hiddenBlocks);
+	
+	// Applies the customized styles of the user
+	applyCustomStyles();
+}
+
+
+/**
+ * Apply the customized styles the user has set in the data- attributes
+ * (see the README.md for more informations)
+ */
+function applyCustomStyles() {
+	
+	let dataset = document.querySelector("#etwinFooter").dataset;
+	let styleNode = document.createElement('style');
+	styleNode.textContent = `
+		#etwinFooter .box {
+			background-color: ${dataset.bgcolor};
+			border-color: ${dataset.bordercolor};
+			color: ${dataset.textcolor};
+		}
+		#etwinFooter a {
+			color: ${dataset.linkcolor};
+		}
+		#etwinFooter .status {
+			border-color: ${dataset.bordercolor};
+		}
+		#etwinFooter .etwin-logo .contour {
+			fill: ${dataset.logocolor};
+		}
+	`;
+	// Write the new style rules in the head of the page
+	document.head.appendChild(styleNode);
 }
 
 

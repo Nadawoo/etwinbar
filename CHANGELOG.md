@@ -2,6 +2,9 @@
 This changelog is formatted as recommended by [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 ## Unreleased
+### Added
+- The user can customise the styles of the footer (background color, text color...)
+
 ### Modified
 - Add link to the wiki in the main text block
 
@@ -15,7 +18,6 @@ This changelog is formatted as recommended by [Keep a Changelog](https://keepach
 ## [3.0] - 2025-07-31
 ### Modified
 - Rewording of the texts to make them generic and include all useful links
-
 ## [2.0] - 2025-07-30
 ### Added
 - Can insert the full footer of Eternaltwin (with the Piouz logo, "Thanks to" block and "Devs" block)
