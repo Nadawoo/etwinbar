@@ -3,6 +3,9 @@ This changelog is formatted as recommended by [Keep a Changelog](https://keepach
 
 ## Unreleased
 ### Added
+- Customization: The user can hide blocks of his choice
+
+### Modified
 - Add the missing links for Alphabounce, Dinocard and Interwheel
 
 ## [3.0] - 2025-07-31

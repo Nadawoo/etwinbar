@@ -54,7 +54,22 @@ Here is a minimalistic structure with the 3 elements to insert :
 
 You can find a complete example of implementation in the **demo.htm** page.
 
-# How to change the style of the footer?
+# Customisation
+## How to hide blocks
+You can hide the blocks you don't need by listing them in the "hiddenblocks" data attribute:
+```html
+<section id="etwinFooter" data-hiddenblocks="devs, thanks">
+```
+The items must be separated by a comma.
+
+Allowed values :
+- devs : The "Staff/Équipe" block
+- thanks : The "Thanks to" block
+- description : The main block with the logo
+- games : The list of other games
+- legal : The links to the legal mentions
+
+## How to change the style of the footer
 The CSS provided with EtwinBar is minimalistic, as we assume you want to apply styles in accordance with the design of your site.
 
 If you want to add or change the styles, put your rules in your own CSS files. Don't put them in the CSS files of EtwinBar, as they would be erased in case of update.

@@ -102,13 +102,48 @@ async function loadTemplate(url, templateId) {
  */
 async function addFullEtwinFooter() {
 	
+	// Add the footer inside the HTML page
 	const template = await loadTemplate("etwinbar/templates/fullFooter.htm", "#tplFullFooter");
-	
 	const etwinFooter = document.querySelector('#etwinFooter');
 	const clone = template.content.cloneNode(true);
 	etwinFooter.appendChild(clone);
 	
+	// Populate the block "Eternatwin's games" with the list of games
 	addEtwinGames();
+	
+	// Hide the blocks the user doesn't want
+	let hiddenBlocks = parseDatasetList(document.querySelector("#etwinFooter"), "hiddenblocks");	
+	hideBlocks(hiddenBlocks);
+}
+
+
+/**
+ * Get the content of a data- attribute and convert it to a JS list.
+ * Ex: <div data-members="alice, bob"></div>
+ *     will be converted to ["alice", "bob"]
+ *
+ * @param {Object} element - The HTML element owning the data- attribute
+ *							 Ex: document.querySelector("#myElement")
+ * @param {String} dataAttrName - The name the data- which contains the list to parse.
+								  The items in the value must be separated by a comma.
+ * @return {Array}
+ */
+function parseDatasetList(element, dataAttrName) {
+	
+	let raw = element.dataset[dataAttrName];
+	if (!raw) return [];
+	return raw.split(',').map(item => item.trim()).filter(Boolean);
+}
+
+
+function hideBlocks(hiddenBlocks) {
+	
+	hiddenBlocks.forEach(className => {
+		const element = document.querySelector(`#etwinFooter .${className}`);
+		if(element) {
+			element.classList.add('hidden');
+		}
+	});
 }
 
 

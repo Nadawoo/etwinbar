@@ -148,6 +148,10 @@ html {
 	margin-right: 1.6em;
 }
 
+#etwinFooter .hidden {
+	display:none;
+}
+
 @media only screen and (min-width: 768px) {
 	#etwinFooter .box {
 		order: initial;
