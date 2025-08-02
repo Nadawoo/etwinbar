@@ -5,7 +5,7 @@ addFullEtwinFooter();
 /**
  * Adds the links to the Eternaltwin games in the footer of the page
  */
-async function addEtwinGames() {
+async function populateGamesBlock() {
 	
 	const games = [
 		{
@@ -76,6 +76,21 @@ async function addEtwinGames() {
 }
 
 
+async function populateDevsBlock(devs) {
+	
+	let devsContainer = await document.querySelector('#etwinFooter .devs ul');
+	
+	let fragment = document.createDocumentFragment();
+	devs.forEach(dev => {
+		const newItem = document.createElement('li');
+		newItem.innerText = dev;
+		fragment.appendChild(newItem);
+	});
+	
+	devsContainer.appendChild(fragment);
+}
+
+
 /**
  * Load an HTML <template>
  */
@@ -117,6 +132,8 @@ async function loadJson(filePath) {
  */
 async function addFullEtwinFooter() {
 	
+	let configs = await loadJson('config.json');
+	
 	// Add the footer inside the HTML page
 	const template = await loadTemplate("/etwinbar/templates/fullFooter.htm", "#tplFullFooter");
 	const etwinFooter = document.querySelector('#etwinFooter');
@@ -124,14 +141,14 @@ async function addFullEtwinFooter() {
 	etwinFooter.appendChild(clone);
 	
 	// Populate the block "Eternatwin's games" with the list of games
-	addEtwinGames();
+	populateGamesBlock();
+	populateDevsBlock(configs.devs);
 	
 	// Hide the blocks the user doesn't want
 	let hiddenBlocks = parseDatasetList(document.querySelector("#etwinFooter"), "hiddenblocks");	
 	hideBlocks(hiddenBlocks);
 	
 	// Applies the customized styles of the user
-	let configs = await loadJson('config.json');
 	applyCustomStyles(configs.design);
 }
 

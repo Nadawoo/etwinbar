@@ -5,5 +5,10 @@
 		"textColor": "white",
 		"linkColor": "#84e100",
 		"logoColor": "black"
-	}
+	},
+	"devs": [
+		"John \"Johnny\" Doe",
+		"Super \"Califragil\" Istic",
+		"Chim \"Chimney\" Cheree"
+	]
 }

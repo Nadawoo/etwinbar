@@ -70,8 +70,13 @@ Allowed values :
 - games : The list of other games
 - legal : The links to the legal mentions
 
+## How to set the content of the "Staff" block
+Open the JSON file located in **/etwinbar/config.json** and put the names of the staff members in a list.
+
+If you use quotes inside a string, don't forget to escape them with a backslash (\") to keep the JSON valid.
+
 ## How to change the style of the footer
-Open the JSON file located in /etwinbar/config.json and change the values in the subkeys of the "design" key:
+Open the JSON file located in **/etwinbar/config.json** and change the values in the subkeys of the "design" key:
 
 - backgroundColor : Color of the background of the blocks
 - borderColor : Color of the border of the blocks
