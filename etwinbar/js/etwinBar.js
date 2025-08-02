@@ -76,18 +76,24 @@ async function populateGamesBlock() {
 }
 
 
-async function populateStaffBlock(staff) {
+/**
+ * Add <li> items in a <ul>
+ * 
+ * @param {String} listSelector
+ * @param {Array} listItems
+ */
+async function populateList(listSelector, listItems) {
 	
-	let staffContainer = await document.querySelector('#etwinFooter .staff ul');
+	let listContainer = await document.querySelector(listSelector);
 	
 	let fragment = document.createDocumentFragment();
-	staff.forEach(dev => {
+	listItems.forEach(listItem => {
 		const newItem = document.createElement('li');
-		newItem.innerText = dev;
+		newItem.innerText = listItem;
 		fragment.appendChild(newItem);
 	});
 	
-	staffContainer.appendChild(fragment);
+	listContainer.appendChild(fragment);
 }
 
 
@@ -140,9 +146,10 @@ async function addFullEtwinFooter() {
 	const clone = template.content.cloneNode(true);
 	etwinFooter.appendChild(clone);
 	
-	// Populate the block "Eternatwin's games" with the list of games
+	// Populate the "Eternatwin's games" block with the list of games
 	populateGamesBlock();
-	populateStaffBlock(configs.staff);
+	// Populate the "Staff" block with the list of devs/admins
+	populateList("#etwinFooter .staff ul", configs.staff);
 	
 	// Hide the blocks the user doesn't want
 	let hiddenBlocks = parseDatasetList(document.querySelector("#etwinFooter"), "hiddenblocks");	
