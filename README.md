@@ -21,13 +21,13 @@ Put the **/etwinbar** folder in the appropriate place of your site. It can be th
 
 **Insert this line inside the &lt;head&gt; of your page :**
 ```html
-<link rel="stylesheet" href="etwinbar/css/etwinBar.css">
+<link rel="stylesheet" href="/etwinbar/css/etwinBar.css">
 ```
 (Adapt the path if you have placed the **/etwinbar** folder elsewhere than at the root of your site.)
 
 **Insert this line before the end of your &lt;body&gt; :**
 ```html
-<script type="text/javascript" src="etwinbar/js/etwinBar.js" async></script>
+<script type="text/javascript" src="/etwinbar/js/etwinBar.js" async></script>
 ```
 (Adapt the path if you have placed the **/etwinbar** folder elsewhere than at the root of your site.)
 
@@ -36,7 +36,7 @@ Here is a minimalistic structure with the 3 elements to insert :
 ```html
 <html>
 	<head>
-		<link rel="stylesheet" href="etwinbar/css/etwinBar.css">
+		<link rel="stylesheet" href="/etwinbar/css/etwinBar.css">
 	</head>
 	<body>
 		
@@ -46,7 +46,7 @@ Here is a minimalistic structure with the 3 elements to insert :
 			<section id="etwinFooter"></section>
 		</footer>
 		
-		<script type="text/javascript" src="etwinbar/js/etwinBar.js" async></script>
+		<script type="text/javascript" src="/etwinbar/js/etwinBar.js" async></script>
 		
 	</body>
 </html>

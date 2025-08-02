@@ -103,7 +103,7 @@ async function loadTemplate(url, templateId) {
 async function addFullEtwinFooter() {
 	
 	// Add the footer inside the HTML page
-	const template = await loadTemplate("etwinbar/templates/fullFooter.htm", "#tplFullFooter");
+	const template = await loadTemplate("/etwinbar/templates/fullFooter.htm", "#tplFullFooter");
 	const etwinFooter = document.querySelector('#etwinFooter');
 	const clone = template.content.cloneNode(true);
 	etwinFooter.appendChild(clone);
