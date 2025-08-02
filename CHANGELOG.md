@@ -1,7 +1,7 @@
 # Changelog for EtwinBar
 This changelog is formatted as recommended by [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
-## [Unreleased]
+## [6.0] - 2025-08-02
 ### Added
 - [Customization] The content of the "Staff" and "Thanks" blocks can be modified
 ### Modified
