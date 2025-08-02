@@ -55,6 +55,9 @@ Here is a minimalistic structure with the 3 elements to insert :
 You can find a complete example of implementation in the **demo.htm** page.
 
 # Customisation
+## Prerequirement: create the config file
+Ensure that the file **/etwinbar/config.json** exists. If not, create it by renaming the file **config.sample.json** to **config.json**.
+
 ## How to hide blocks
 You can hide the blocks you don't need by listing them in the "hiddenblocks" data attribute:
 ```html
@@ -71,12 +74,12 @@ Allowed values :
 - legal : The links to the legal mentions
 
 ## How to set the content of the "Staff" block
-Open the JSON file located in **/etwinbar/config.json** and put the names of the staff members in a list.
+Open the **config.json** file and put the names of the staff members in a list.
 
 If you use quotes inside a string, don't forget to escape them with a backslash (\") to keep the JSON valid.
 
 ## How to change the style of the footer
-Open the JSON file located in **/etwinbar/config.json** and change the values in the subkeys of the "design" key:
+Open the **config.json** file and change the values in the subkeys of the "design" key:
 
 - backgroundColor : Color of the background of the blocks
 - borderColor : Color of the border of the blocks

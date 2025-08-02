@@ -84,7 +84,8 @@ async function populateGamesBlock() {
  */
 async function populateList(listSelector, listItems) {
 	
-	let listContainer = await document.querySelector(listSelector);
+	let container = await document.querySelector(listSelector);
+	container.innerHTML = "";
 	
 	let fragment = document.createDocumentFragment();
 	listItems.forEach(listItem => {
@@ -93,21 +94,23 @@ async function populateList(listSelector, listItems) {
 		fragment.appendChild(newItem);
 	});
 	
-	listContainer.appendChild(fragment);
+	container.appendChild(fragment);
 }
 
 
 /**
  * Add <li> items in a <ul>
  * 
- * @param {String} listSelector
+ * @param {String} blockSelector
  * @param {String} text
  */
-async function populateBlock(listSelector, text) {
+async function populateBlock(blockSelector, text) {
 	
-	let listContainer = await document.querySelector(listSelector);
+	let container = await document.querySelector(blockSelector);
+	container.innerHTML = "";
+	
 	let fragment = document.createDocumentFragment();
-	listContainer.append(text);
+	container.append(text);
 }
 
 
@@ -147,12 +150,24 @@ async function loadJson(filePath) {
 
 
 /**
+ * Test if the file exists
+ */
+async function isFile(url) {
+	
+	try {
+		const response = await fetch(url, { method: 'HEAD' });
+		return response.ok;
+	} catch (error) {
+		return false;
+	}
+}
+
+
+/**
  * Insert the full footer of Eternaltwin (with the Piouz logo,
  * "Thanks to" block, "Staff" block, etc.)
  */
 async function addFullEtwinFooter() {
-	
-	let configs = await loadJson('config.json');
 	
 	// Add the footer inside the HTML page
 	const template = await loadTemplate("/etwinbar/templates/fullFooter.htm", "#tplFullFooter");
@@ -160,17 +175,22 @@ async function addFullEtwinFooter() {
 	const clone = template.content.cloneNode(true);
 	etwinFooter.appendChild(clone);
 	
-	// Add the texts in the blocks (Games, Staff, Thanks)
-	populateGamesBlock();
-	populateList("#etwinFooter .staff ul", configs.staff);
-	populateBlock("#etwinFooter .thanks p", configs.thanks.join(', '));
+	// Apply the user's customisations
+	isFile('config.json').then(async isFile => {
+		if(isFile) {
+			let configs = await loadJson('config.json');
+			// Add the texts in the blocks (Games, Staff, Thanks)
+			populateGamesBlock();
+			populateList("#etwinFooter .staff ul", configs.staff);
+			populateBlock("#etwinFooter .thanks p", configs.thanks.join(', '));
+			// Apply the customized styles
+			applyCustomStyles(configs.design);
+		}
+	});
 	
 	// Hide the blocks the user doesn't want
 	let hiddenBlocks = parseDatasetList(document.querySelector("#etwinFooter"), "hiddenblocks");	
 	hideBlocks(hiddenBlocks);
-	
-	// Applies the customized styles of the user
-	applyCustomStyles(configs.design);
 }
 
 
