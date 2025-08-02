@@ -98,6 +98,20 @@ async function populateList(listSelector, listItems) {
 
 
 /**
+ * Add <li> items in a <ul>
+ * 
+ * @param {String} listSelector
+ * @param {String} text
+ */
+async function populateBlock(listSelector, text) {
+	
+	let listContainer = await document.querySelector(listSelector);
+	let fragment = document.createDocumentFragment();
+	listContainer.append(text);
+}
+
+
+/**
  * Load an HTML <template>
  */
 async function loadTemplate(url, templateId) {
@@ -146,10 +160,10 @@ async function addFullEtwinFooter() {
 	const clone = template.content.cloneNode(true);
 	etwinFooter.appendChild(clone);
 	
-	// Populate the "Eternatwin's games" block with the list of games
+	// Add the texts in the blocks (Games, Staff, Thanks)
 	populateGamesBlock();
-	// Populate the "Staff" block with the list of devs/admins
 	populateList("#etwinFooter .staff ul", configs.staff);
+	populateBlock("#etwinFooter .thanks p", configs.thanks.join(', '));
 	
 	// Hide the blocks the user doesn't want
 	let hiddenBlocks = parseDatasetList(document.querySelector("#etwinFooter"), "hiddenblocks");	

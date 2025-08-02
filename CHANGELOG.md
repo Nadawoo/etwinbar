@@ -3,7 +3,7 @@ This changelog is formatted as recommended by [Keep a Changelog](https://keepach
 
 ## [Unreleased]
 ### Added
-- [Customization] The content of the "Staff" block can be modified
+- [Customization] The content of the "Staff" and "Thanks" blocks can be modified
 ### Modified
 - [Customization] The styles are now defined in a config file, no more as attributes in the HTML
 
