@@ -58,12 +58,12 @@ You can find a complete example of implementation in the **demo.htm** page.
 ## How to hide blocks
 You can hide the blocks you don't need by listing them in the "hiddenblocks" data attribute:
 ```html
-<section id="etwinFooter" data-hiddenblocks="devs, thanks">
+<section id="etwinFooter" data-hiddenblocks="staff, thanks">
 ```
 The items must be separated by a comma.
 
 Allowed values :
-- devs : The "Staff/Équipe" block
+- staff : The "Staff" block
 - thanks : The "Thanks to" block
 - description : The main block with the logo
 - alpha : The alert about the alpha version in the main block

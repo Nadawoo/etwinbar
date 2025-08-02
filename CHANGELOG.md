@@ -26,7 +26,7 @@ This changelog is formatted as recommended by [Keep a Changelog](https://keepach
 - Rewording of the texts to make them generic and include all useful links
 ## [2.0] - 2025-07-30
 ### Added
-- Can insert the full footer of Eternaltwin (with the Piouz logo, "Thanks to" block and "Devs" block)
+- Can insert the full footer of Eternaltwin (with the Piouz logo, "Thanks to" block and "Staff" block)
 
 ## [1.1] - 2025-07-30
 ### Added

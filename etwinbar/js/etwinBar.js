@@ -76,18 +76,18 @@ async function populateGamesBlock() {
 }
 
 
-async function populateDevsBlock(devs) {
+async function populateStaffBlock(staff) {
 	
-	let devsContainer = await document.querySelector('#etwinFooter .devs ul');
+	let staffContainer = await document.querySelector('#etwinFooter .staff ul');
 	
 	let fragment = document.createDocumentFragment();
-	devs.forEach(dev => {
+	staff.forEach(dev => {
 		const newItem = document.createElement('li');
 		newItem.innerText = dev;
 		fragment.appendChild(newItem);
 	});
 	
-	devsContainer.appendChild(fragment);
+	staffContainer.appendChild(fragment);
 }
 
 
@@ -128,7 +128,7 @@ async function loadJson(filePath) {
 
 /**
  * Insert the full footer of Eternaltwin (with the Piouz logo,
- * "Thanks to" block, "Devs" block, etc.)
+ * "Thanks to" block, "Staff" block, etc.)
  */
 async function addFullEtwinFooter() {
 	
@@ -142,7 +142,7 @@ async function addFullEtwinFooter() {
 	
 	// Populate the block "Eternatwin's games" with the list of games
 	populateGamesBlock();
-	populateDevsBlock(configs.devs);
+	populateStaffBlock(configs.staff);
 	
 	// Hide the blocks the user doesn't want
 	let hiddenBlocks = parseDatasetList(document.querySelector("#etwinFooter"), "hiddenblocks");	
