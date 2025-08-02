@@ -71,9 +71,15 @@ Allowed values :
 - legal : The links to the legal mentions
 
 ## How to change the style of the footer
-The CSS provided with EtwinBar is minimalistic, as we assume you want to apply styles in accordance with the design of your site.
+Open the JSON file located in /etwinbar/config.json and change the values in the subkeys of the "design" key:
 
-If you want to add or change the styles, put your rules in your own CSS files. Don't put them in the CSS files of EtwinBar, as they would be erased in case of update.
+- backgroundColor : Color of the background of the blocks
+- borderColor : Color of the border of the blocks
+- textColor : Color of the text in the footer
+- linkColor : Color of the links in the footer
+- logoColor : Color of the Eternatwin's logo at the top of the main block
+
+If you want to add or change other styles, put your rules in your own CSS files. Never put them in the CSS files of EtwinBar, as they would be erased in case of update.
 
 # Is there a risk that EtwinBar breaks the CSS of my site?
 No. All the styles added by the script are prefixed with an #etwinFooter ID, so they are in a closed scope and can't interfere with your styles. (Unless your site already uses this ID, which would be very improbable!)

@@ -96,6 +96,21 @@ async function loadTemplate(url, templateId) {
 }
 
 
+async function loadJson(filePath) {
+
+	try {
+		const response = await fetch('config.json');
+		if (!response.ok) {
+			throw new Error('HTTP error while reading JSON file: ' + response.status);
+		}
+		return await response.json();
+	} catch (error) {
+		console.error('Error while reading JSON file:', error);
+		return null;
+	}
+}
+
+
 /**
  * Insert the full footer of Eternaltwin (with the Piouz logo,
  * "Thanks to" block, "Devs" block, etc.)
@@ -116,7 +131,8 @@ async function addFullEtwinFooter() {
 	hideBlocks(hiddenBlocks);
 	
 	// Applies the customized styles of the user
-	applyCustomStyles();
+	let configs = await loadJson('config.json');
+	applyCustomStyles(configs.design);
 }
 
 
@@ -124,27 +140,26 @@ async function addFullEtwinFooter() {
  * Apply the customized styles the user has set in the data- attributes
  * (see the README.md for more informations)
  */
-function applyCustomStyles() {
+async function applyCustomStyles(stylesValues) {
 	
-	let dataset = document.querySelector("#etwinFooter").dataset;
 	let styleNode = document.createElement('style');
 	styleNode.textContent = `
 		#etwinFooter .box {
-			background-color: ${dataset.bgcolor};
-			border-color: ${dataset.bordercolor};
-			color: ${dataset.textcolor};
+			background-color: ${stylesValues.backgroundColor};
+			border-color: ${stylesValues.borderColor};
+			color: ${stylesValues.textColor};
 		}
 		#etwinFooter hr {
-			border-color: ${dataset.bordercolor};
+			border-color: ${stylesValues.borderColor};
 		}
 		#etwinFooter a {
-			color: ${dataset.linkcolor};
+			color: ${stylesValues.linkColor};
 		}
 		#etwinFooter .status {
-			border-color: ${dataset.bordercolor};
+			border-color: ${stylesValues.borderColor};
 		}
 		#etwinFooter .etwin-logo .contour {
-			fill: ${dataset.logocolor};
+			fill: ${stylesValues.logoColor};
 		}
 	`;
 	// Write the new style rules in the head of the page

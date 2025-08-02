@@ -1,6 +1,10 @@
 # Changelog for EtwinBar
 This changelog is formatted as recommended by [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
+## [Unreleased]
+### Modified
+- [Customization] The styles are now defined in a config file, no more as attributes in the HTML.
+
 ## [5.0] - 2025-08-01
 ### Added
 -  [Customization] The user can change the styles of the footer (background color, text color...)
