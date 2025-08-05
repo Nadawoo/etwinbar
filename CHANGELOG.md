@@ -1,10 +1,10 @@
 # Changelog for EtwinBar
 This changelog is formatted as recommended by [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
-## [Unreleased]
+## [7.0] - 2025-08-05
 ### Fixed
 - [JS] Encapsulate the EtwinBar's functions in a Javascript class to avoid interferences with the user's JS
-- [CSS] Remove the last EtwinBar's styles which could interfer with the user's styles
+- [CSS] Remove the last EtwinBar's styles which could have interfered with the user's styles
 
 ## [6.0] - 2025-08-02
 ### Added
