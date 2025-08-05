@@ -13,9 +13,9 @@
 - [Is there a risk that EtwinBar breaks the CSS/JS of my site?](#is-there-a-risk-that-etwinbar-breaks-the-cssjs-of-my-site)
 
 # What is EtwinBar?
-Etwinbar is a part of the Eternaltwin project (https://eternaltwin.org/).
+EtwinBar is a part of the Eternaltwin project (https://eternaltwin.org/).
 
-Etwinbar allows you to insert on your own site a footer common to all of the Eternaltwin games.
+EtwinBar allows you to insert on your own site a footer common to all of the Eternaltwin games.
 
 - ✔️ Only 3 lines of HTML required to install it on you site
 - ✔️ Contains all the useful informations and links
