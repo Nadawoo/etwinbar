@@ -3,7 +3,7 @@
 - [How to install the Eternaltwin footer on my site?](#how-to-install-the-eternaltwin-footer-on-my-site)
   - [1. Install the EtwinBar library](#1-install-the-etwinbar-library)
   - [2. Set up the HTML elements](#2-set-up-the-html-elements)
-- [Example](#example)
+  - [Example](#example)
 - [Customisation](#customisation)
   - [Prerequirement: create the config file](#prerequirement-create-the-config-file)
   - [How to hide blocks](#how-to-hide-blocks)
