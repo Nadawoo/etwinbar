@@ -75,9 +75,19 @@ Allowed values :
 - legal : The links to the legal mentions
 
 ## How to set the content of the "Staff" block
-Open the **config.json** file and put the names of the staff members in a list.
-
-If you use quotes inside a string, don't forget to escape them with a backslash (\") to keep the JSON valid.
+Open the **config.json** file and put the names of the staff members in a list. Example:
+```json
+"staff": [
+    "John Doe",
+    "Sarah Connor"
+]
+```
+If you use quotes inside a string, don't forget to escape them with a backslash (\\") to keep the JSON valid:
+```json
+"staff": [
+    "Super \"Califragil\" Istic"
+]
+```
 
 ## How to change the style of the footer
 Open the **config.json** file and change the values in the subkeys of the "design" key:
