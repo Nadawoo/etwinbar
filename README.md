@@ -5,8 +5,9 @@ Etwinbar allows you to insert on your own site a footer common to all of the Ete
 
 - ✔️ Only 3 lines of HTML required to install it on you site
 - ✔️ Contains all the useful informations and links
+- ✔️ Customisable contents
 - ✔️ Responsive
-- ✔️ Doesn't break your CSS
+- ✔️ Doesn't break your CSS or JS
 
 # How to install the Eternaltwin footer on my site?
 ## 1) Install the EtwinBar library
@@ -89,5 +90,7 @@ Open the **config.json** file and change the values in the subkeys of the "desig
 
 If you want to add or change other styles, put your rules in your own CSS files. Never put them in the CSS files of EtwinBar, as they would be erased in case of update.
 
-# Is there a risk that EtwinBar breaks the CSS of my site?
-No. All the styles added by the script are prefixed with an #etwinFooter ID, so they are in a closed scope and can't interfere with your styles. (Unless your site already uses this ID, which would be very improbable!)
+# Is there a risk that EtwinBar breaks the CSS/JS of my site?
+No, because all the EtwinBar's styles are prefixed with an HTML ID and all its Javascript functions are encapsulated in a class. Juste follow these two intructions:
+- **Don't define an #etwinFooter ID** in your HTML. This ID is reserved by the library.
+- **Don't define an EtwinBar() class** in your Javascript. This class is reserved by the library.
