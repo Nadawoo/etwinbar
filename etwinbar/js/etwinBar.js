@@ -97,7 +97,7 @@ class EtwinBar {
 
 
 	/**
-	 * Add <li> items in a <ul>
+	 * Insert a raw text inside a block. If you need a list (<ul>), see the populateList() method.
 	 * 
 	 * @param {String} blockSelector
 	 * @param {String} text
