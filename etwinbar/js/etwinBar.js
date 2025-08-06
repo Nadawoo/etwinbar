@@ -133,7 +133,7 @@ class EtwinBar {
     async loadJson(filePath) {
 
         try {
-            const response = await fetch('config.json');
+            const response = await fetch(filePath);
             if (!response.ok) {
                     throw new Error('HTTP error while reading JSON file: ' + response.status);
             }
