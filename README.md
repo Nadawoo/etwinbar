@@ -3,7 +3,6 @@
 - [How to install the Eternaltwin footer on my site?](#how-to-install-the-eternaltwin-footer-on-my-site)
   - [1. Install the EtwinBar library](#1-install-the-etwinbar-library)
   - [2. Set up the HTML elements](#2-set-up-the-html-elements)
-  - [Example](#example)
 - [Customisation](#customisation)
   - [Prerequirement: create the config file](#prerequirement-create-the-config-file)
   - [How to hide blocks](#how-to-hide-blocks)
@@ -27,25 +26,20 @@ EtwinBar allows you to insert on your own site a footer common to all of the Ete
 ## 1. Install the EtwinBar library
 Put the **/etwinbar** folder in the appropriate place of your site. It can be the root or a subfolder.
 
-## 2. Set up the HTML elements
+## 2. Set up the HTML element
 **Insert this line before the end of your &lt;body&gt; :**
 ```html
 <script type="module" src="/etwinbar/js/etwinBar.js"></script>
 ```
 (Adapt the path if you have placed the **/etwinbar** folder elsewhere than at the root of your site.)
 
-## Example
-Here is a minimalistic structure with the 3 elements to insert :
+Example:
 ```html
 <html>
     <body>
         
         <!-- The main content of your site is here -->
-
-        <footer>
-                <section id="etwinFooter"></section>
-        </footer>
-
+        
         <script type="module" src="/etwinbar/js/etwinBar.js"></script>
 
     </body>
