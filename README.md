@@ -50,20 +50,20 @@ Put the **/etwinbar** folder in the appropriate place of your site. It can be th
 Here is a minimalistic structure with the 3 elements to insert :
 ```html
 <html>
-	<head>
-		<link rel="stylesheet" href="/etwinbar/css/etwinBar.css">
-	</head>
-	<body>
-		
-		<!-- The main content of your site is here -->
-		
-		<footer>
-			<section id="etwinFooter"></section>
-		</footer>
-		
-		<script type="text/javascript" src="/etwinbar/js/etwinBar.js" async></script>
-		
-	</body>
+    <head>
+        <link rel="stylesheet" href="/etwinbar/css/etwinBar.css">
+    </head>
+    <body>
+        
+        <!-- The main content of your site is here -->
+
+        <footer>
+                <section id="etwinFooter"></section>
+        </footer>
+
+        <script type="text/javascript" src="/etwinbar/js/etwinBar.js" async></script>
+
+    </body>
 </html>
 ```
 
@@ -106,10 +106,10 @@ If a name contains quotes, don't forget to escape them with a backslash (\\") to
 Open the **config.json** file and put the names you want in the **"thanks"** subkey. Example:
 ```json
 "thanks": [
-	"Lorem",
-	"Ipsum",
-	"Dolor",
-	"Sit Amet"
+    "Lorem",
+    "Ipsum",
+    "Dolor",
+    "Sit Amet"
 ]
 ```
 If a name contains quotes, don't forget to escape them with a backslash (\\") to keep the JSON valid:
