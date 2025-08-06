@@ -1,12 +1,12 @@
 # Changelog for EtwinBar
 This changelog is formatted as recommended by [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
-## [Unreleased]
+## [9.0] - 2025-08-07
 ### Modified
 - [Installation] The HTML line for inserting the CSS is no more required
 - [Installation] The HTML line for inserting the footer is no more required
 
-## [8.0]
+## [8.0] - 2025-08-06
 ### Added
 - The library can now be installed as an npm module
 
