@@ -1,6 +1,10 @@
 # Changelog for EtwinBar
 This changelog is formatted as recommended by [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
+## [Unreleased]
+### Modified
+- [Installation] The line for inserting the CSS is no more required
+
 ## [8.0]
 ### Added
 - The library can now be installed as an npm module

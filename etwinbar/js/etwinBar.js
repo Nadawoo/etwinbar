@@ -143,6 +143,20 @@ class EtwinBar {
             return null;
         }
     }
+    
+    
+    /**
+     * Add a <link> line in HTML for adding a CSS file
+     * 
+     * @param {String} cssPath
+     */
+    addCssLink(cssPath) {
+        
+        const link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.href = cssPath;
+        document.head.appendChild(link);
+    }
 
 
     /**
