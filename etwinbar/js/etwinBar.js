@@ -273,7 +273,4 @@ class EtwinBar {
 	}
 }
 
-
-// Execute the code
-EtwinBar = new EtwinBar();
-EtwinBar.addFullEtwinFooter();
+export default EtwinBar;

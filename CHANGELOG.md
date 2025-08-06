@@ -1,6 +1,10 @@
 # Changelog for EtwinBar
 This changelog is formatted as recommended by [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
+## [Unreleased]
+### Added
+- The library can now be installed as an npm module
+
 ## [7.0] - 2025-08-05
 ### Fixed
 - [JS] Encapsulate the EtwinBar's functions in a Javascript class to avoid interferences with the user's JS
