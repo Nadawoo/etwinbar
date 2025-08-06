@@ -28,15 +28,9 @@ EtwinBar allows you to insert on your own site a footer common to all of the Ete
 Put the **/etwinbar** folder in the appropriate place of your site. It can be the root or a subfolder.
 
 ## 2. Set up the HTML elements
-**Insert this line where you want inside the &lt;footer&gt; of your page :**
-```html
-<section id="etwinFooter"></section>
-```
-(This is where the list of games will be added.)
-
 **Insert this line before the end of your &lt;body&gt; :**
 ```html
-<script type="text/javascript" src="/etwinbar/js/etwinBar.js" async></script>
+<script type="module" src="/etwinbar/js/etwinBar.js"></script>
 ```
 (Adapt the path if you have placed the **/etwinbar** folder elsewhere than at the root of your site.)
 
@@ -52,7 +46,7 @@ Here is a minimalistic structure with the 3 elements to insert :
                 <section id="etwinFooter"></section>
         </footer>
 
-        <script type="text/javascript" src="/etwinbar/js/etwinBar.js" async></script>
+        <script type="module" src="/etwinbar/js/etwinBar.js"></script>
 
     </body>
 </html>
@@ -120,7 +114,13 @@ Open the **config.json** file and change the values in the subkeys of the "desig
 
 If you want to add or change other styles, put your rules in your own CSS files. Never put them in the CSS files of EtwinBar, as they would be erased in case of update.
 
+## How to change the place of the footer
+By default, the EtwinBar's footer is placed at the end of the <footer> tag. You can place it elsewhere by adding this tag where you want in your HTML:
+```html
+<section id="etwinFooter"></section>
+```
+
 # Is there a risk that EtwinBar breaks the CSS/JS of my site?
-No, because all the EtwinBar's styles are prefixed with an HTML ID and all its Javascript functions are encapsulated in a class. Juste follow these two intructions:
+No, because all the EtwinBar's styles are prefixed with an HTML ID and all its Javascript functions are encapsulated in a class. Just follow these two intructions:
 - **Don't define an #etwinFooter ID** in your HTML. This ID is reserved by the library.
 - **Don't define an EtwinBar() class** in your Javascript. This class is reserved by the library.

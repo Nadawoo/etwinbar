@@ -172,16 +172,38 @@ class EtwinBar {
         }
     }
 
+    
+    /**
+     * Add the <section id="etwinBar"> in the HTML page
+     */
+    addEtwinBarContainer() {
+        
+        // Create <footer> if doesn't exist
+        let footerNode = document.querySelector("footer");
+        if(footerNode === null) {
+            let tag = document.createElement("footer");
+            document.querySelector("body").appendChild(tag);
+        }
+        
+        // Create <section id="etwinBar"> if not already placed by the user
+        let etwinBarNode = document.querySelector("#etwinBar");
+        if(etwinBarNode === null) {
+            let tag = document.createElement('section');
+            tag.id = 'etwinFooter';
+            document.querySelector('footer').appendChild(tag);
+        }
+    }
+    
 
     /**
      * Insert the full footer of Eternaltwin (with the Piouz logo,
      * "Thanks to" block, "Staff" block, etc.)
      */
     async addFullEtwinFooter() {
-
+        
         // Add the footer inside the HTML page
         const template = await this.loadTemplate("/etwinbar/templates/fullFooter.htm", "#tplFullFooter");
-        const etwinFooter = document.querySelector('#etwinFooter');
+        const etwinFooter = await document.querySelector('#etwinFooter');
         const clone = template.content.cloneNode(true);
         etwinFooter.appendChild(clone);
 

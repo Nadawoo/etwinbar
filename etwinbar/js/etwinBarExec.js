@@ -5,4 +5,5 @@ import EtwinBar from './etwinBar.js';
 
 const footer = new EtwinBar();
 footer.addCssLink("/etwinbar/css/etwinBar.css");
+footer.addEtwinBarContainer();
 footer.addFullEtwinFooter();
