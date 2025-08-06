@@ -9,6 +9,7 @@
   - [How to set the content of the "Staff" block](#how-to-set-the-content-of-the-staff-block)
   - [How to set the content of the "Thanks" block](#how-to-set-the-content-of-the-thanks-block)
   - [How to change the style of the footer](#how-to-change-the-style-of-the-footer)
+  - [How to change the place of the footer](#how-to-change-the-place-of-the-footer)
 - [Is there a risk that EtwinBar breaks the CSS/JS of my site?](#is-there-a-risk-that-etwinbar-breaks-the-cssjs-of-my-site)
 
 # What is EtwinBar?
