@@ -208,9 +208,10 @@ class EtwinBar {
         etwinFooter.appendChild(clone);
 
         // Apply the user's customisations
-        this.isFile('config.json').then(async isFile => {
+        const configFilePath = "/src/config.json";
+        this.isFile(configFilePath).then(async isFile => {
             if(isFile) {
-                let configs = await this.loadJson('config.json');
+                let configs = await this.loadJson(configFilePath);
                 // Add the texts in the blocks (Games, Staff, Thanks)
                 this.populateGamesBlock();
                 this.populateList("#etwinFooter .staff ul", configs.staff);
