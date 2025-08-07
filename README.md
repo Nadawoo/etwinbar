@@ -17,7 +17,7 @@ EtwinBar is a part of the Eternaltwin project (https://eternaltwin.org/).
 
 EtwinBar allows you to insert on your own site a footer common to all of the Eternaltwin games.
 
-- ✔️ Only 3 lines of HTML required to install it on you site
+- ✔️ Only 1 line of HTML required to install it on you site
 - ✔️ Contains all the useful informations and links
 - ✔️ Customisable contents
 - ✔️ Responsive
