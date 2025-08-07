@@ -25,7 +25,16 @@ EtwinBar allows you to insert on your own site a footer common to all of the Ete
 
 # How to install the Eternaltwin footer on my site?
 ## 1. Download the EtwinBar library
-Put the **/etwinbar** folder in the appropriate place of your site. It can be the root or a subfolder.
+### Option 1: With a manual download
+1. [Download the EtwinBar library from GitHub](https://github.com/Nadawoo/etwinbar/archive/refs/heads/master.zip)
+2. Unzip the downloaded file and put **/etwinbar** folder in the place of your choice among the folders of your site.
+
+### Option 2: By cloning the repository
+1. Open a terminal in the place of your choice among the folders of your site
+2. Run this command to clone the EtwinBar repository:
+```
+git clone https://github.com/Nadawoo/etwinbar.git
+```
 
 ## 2. Initialize the library
 ### Option 1: directly in your HTML page
