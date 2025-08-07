@@ -4,6 +4,7 @@ This changelog is formatted as recommended by [Keep a Changelog](https://keepach
 ## [Unreleaed]
 ### Modified
 - The "/etwinbar" folder is renamed "/src" (strong convention)
+- The entry point of the library is now "/src/index.js" (strong convention)
 - Move the demonstration page out of the lib folder for a real world usage
 
 ## [9.0] - 2025-08-07

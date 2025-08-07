@@ -1,5 +1,5 @@
 // Imports from local file (waiting for publication on npm)
-import EtwinBar from './etwinBar.js';
+import EtwinBar from '/src/js/etwinBar.js';
 // Imports form npm 
 // import EtwinBar from 'etwinbar';
 
