@@ -30,7 +30,7 @@ Put the **/etwinbar** folder in the appropriate place of your site. It can be th
 ## 2. Set up the HTML element
 **Insert this line before the end of your &lt;body&gt; :**
 ```html
-<script type="module" src="/etwinbar/js/etwinBar.js"></script>
+<script type="module" src="/etwinbar/src/js/etwinBar.js"></script>
 ```
 (Adapt the path if you have placed the **/etwinbar** folder elsewhere than at the root of your site.)
 
@@ -41,7 +41,7 @@ Example:
         
         <!-- The main content of your site is here -->
         
-        <script type="module" src="/etwinbar/js/etwinBar.js"></script>
+        <script type="module" src="/etwinbar/src/js/etwinBar.js"></script>
 
     </body>
 </html>
@@ -51,7 +51,7 @@ You can find a complete example of implementation in the **demo.htm** page.
 
 # Customisation
 ## Prerequirement: create the config file
-Ensure that the file **/etwinbar/config.json** exists. If not, create it by renaming the file **config.sample.json** to **config.json**.
+Ensure that the file **/etwinbar/src/config.json** exists. If not, create it by renaming the file **config.sample.json** to **config.json**.
 
 ## How to hide blocks
 You can hide the blocks you don't need by listing them in the "hiddenblocks" data attribute:

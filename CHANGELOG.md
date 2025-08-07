@@ -1,6 +1,10 @@
 # Changelog for EtwinBar
 This changelog is formatted as recommended by [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
+## [Unreleaed]
+### Modified
+- The "/etwinbar" folder is renamed "/src" (strong convention)
+
 ## [9.0] - 2025-08-07
 ### Modified
 - [Installation] The HTML line for inserting the CSS is no more required

@@ -202,7 +202,7 @@ class EtwinBar {
     async addFullEtwinFooter() {
         
         // Add the footer inside the HTML page
-        const template = await this.loadTemplate("/etwinbar/templates/fullFooter.htm", "#tplFullFooter");
+        const template = await this.loadTemplate("/src/templates/fullFooter.htm", "#tplFullFooter");
         const etwinFooter = await document.querySelector('#etwinFooter');
         const clone = template.content.cloneNode(true);
         etwinFooter.appendChild(clone);
