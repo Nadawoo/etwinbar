@@ -33,7 +33,7 @@ Insert this code in your HTML page, before the end of your &lt;body&gt;:
 ```html
 <!-- Don't forget the type="module", otherwise the browser will raise an error like "Cannot use import statement outside a module" -->
 <script type="module">
-    <!-- Adapt the path if you placed the /etwinbar folder elsewhere than at the root of your site -->
+    // Adapt the path if you placed the /etwinbar folder elsewhere than at the root of your site
     import EtwinBar from "/etwinbar/src/index.js"
     const footer = new EtwinBar();
     footer.init();
