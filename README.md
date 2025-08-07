@@ -28,7 +28,8 @@ EtwinBar allows you to insert on your own site a footer common to all of the Ete
 Put the **/etwinbar** folder in the appropriate place of your site. It can be the root or a subfolder.
 
 ## 2. Initialize the library
-**Insert this code in your HTML page, before the end of your &lt;body&gt; :**
+### Option 1: directly in your HTML page
+Insert this code in your HTML page, before the end of your &lt;body&gt;:
 ```html
 <!-- Don't forget the type="module", otherwise the browser will raise an error like "Cannot use import statement outside a module" -->
 <script type="module">
@@ -39,7 +40,24 @@ Put the **/etwinbar** folder in the appropriate place of your site. It can be th
 </script>
 ```
 
-You can find a complete example of implementation in the **demo.htm** page.
+### Option 2: in a Javascript file
+In this example, your Javascript is in a file named **myScript.js** and placed at the root of your site. Adapt this path and name as you need.
+
+1. Insert this code in your HTML page, before the end of your &lt;body&gt;:
+```html
+<!-- Don't forget the type="module", otherwise the browser will raise an error like "Cannot use import statement outside a module" -->
+<script type="module" src="myScript.js"></script>
+```
+
+2. Content of your **myScript.js** file:
+```js
+// Adapt the path if you placed the /etwinbar folder elsewhere than at the root of your site
+import EtwinBar from "/etwinbar/src/index.js"
+const footer = new EtwinBar();
+footer.init();
+```
+
+You can find a demonstration in the **index.htm** page.
 
 # Customisation
 ## Prerequirement: create the config file
