@@ -1,0 +1,15 @@
+/*
+ * Some styles to make the demo page prettier. Not related to the library,
+ * so you can ignore this file.
+ */
+body {
+    height:100vh;
+    max-width:950px;
+    margin:0 auto;
+    border:1px solid black;
+    border-top:none;
+    border-bottom:none;
+}
+main {
+    margin:1em;
+}
