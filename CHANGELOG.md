@@ -1,7 +1,7 @@
 # Changelog for EtwinBar
 This changelog is formatted as recommended by [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
-## [Unreleaed]
+## [10.0] - 2025-08-07
 ### Modified
 - [Installation] The library is now importable as a Javascript module (no more <script src="etwinBar.js"> in your HTML)
 - The "/etwinbar" folder is renamed "/src" (strong convention)
