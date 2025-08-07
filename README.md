@@ -24,27 +24,19 @@ EtwinBar allows you to insert on your own site a footer common to all of the Ete
 - ✔️ Doesn't break your CSS or JS
 
 # How to install the Eternaltwin footer on my site?
-## 1. Install the EtwinBar library
+## 1. Download the EtwinBar library
 Put the **/etwinbar** folder in the appropriate place of your site. It can be the root or a subfolder.
 
-## 2. Set up the HTML element
-**Insert this line before the end of your &lt;body&gt; :**
+## 2. Initialize the library
+**Insert this code in your HTML page, before the end of your &lt;body&gt; :**
 ```html
-<script type="module" src="/etwinbar/src/js/etwinBar.js"></script>
-```
-(Adapt the path if you have placed the **/etwinbar** folder elsewhere than at the root of your site.)
-
-Example:
-```html
-<html>
-    <body>
-        
-        <!-- The main content of your site is here -->
-        
-        <script type="module" src="/etwinbar/src/js/etwinBar.js"></script>
-
-    </body>
-</html>
+<!-- Don't forget the type="module", otherwise the browser will raise an error like "Cannot use import statement outside a module" -->
+<script type="module">
+    <!-- Adapt the path if you placed the /etwinbar folder elsewhere than at the root of your site -->
+    import EtwinBar from "/etwinbar/src/index.js"
+    const footer = new EtwinBar();
+    footer.init();
+</script>
 ```
 
 You can find a complete example of implementation in the **demo.htm** page.
@@ -110,7 +102,7 @@ Open the **config.json** file and change the values in the subkeys of the "desig
 If you want to add or change other styles, put your rules in your own CSS files. Never put them in the CSS files of EtwinBar, as they would be erased in case of update.
 
 ## How to change the place of the footer
-By default, the EtwinBar's footer is placed at the end of the <footer> tag. You can place it elsewhere by adding this tag where you want in your HTML:
+By default, the EtwinBar's footer is placed at the end of the &lt;footer&gt; tag. You can place it elsewhere by adding this tag where you want in your HTML:
 ```html
 <section id="etwinFooter"></section>
 ```

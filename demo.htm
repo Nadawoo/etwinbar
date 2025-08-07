@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EtwinFooter demo</title>
-
+    
+    <!-- Some styles to make the demo page prettier. Ignore them. -->
     <style>
         body {
             height:100vh;
@@ -18,6 +19,7 @@
             margin:1em;
         }
     </style>
+    
 </head>
 <body>
     <main>
@@ -28,9 +30,12 @@
         </ul>
     </main>
     
-    <!-- Insert this line before the end of your <body> -->
-    <script type="module" src="/src/index.js"></script>
-    <!-- End -->	
+    <!-- The EtwinBar library is called here -->    
+    <script type="module">
+        import EtwinBar from "/src/index.js"
+        const footer = new EtwinBar();
+        footer.init();
+    </script>	
 	
 </body>
 </html>

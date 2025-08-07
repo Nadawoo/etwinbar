@@ -1,4 +1,12 @@
-class EtwinBar {
+export default class EtwinBar {
+    
+    init() {
+        
+        this.addCssLink("/src/css/etwinBar.css");
+        this.addEtwinBarContainer();
+        this.populateEtwinFooter();
+    }
+    
     
     /**
      * Adds the links to the Eternaltwin games in the footer of the page
@@ -199,7 +207,7 @@ class EtwinBar {
      * Insert the full footer of Eternaltwin (with the Piouz logo,
      * "Thanks to" block, "Staff" block, etc.)
      */
-    async addFullEtwinFooter() {
+    async populateEtwinFooter() {
         
         // Add the footer inside the HTML page
         const template = await this.loadTemplate("/src/templates/fullFooter.htm", "#tplFullFooter");
@@ -307,5 +315,3 @@ class EtwinBar {
         containerElement.appendChild(fragment);
     }
 }
-
-export default EtwinBar;

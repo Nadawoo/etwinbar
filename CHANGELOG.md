@@ -3,9 +3,10 @@ This changelog is formatted as recommended by [Keep a Changelog](https://keepach
 
 ## [Unreleaed]
 ### Modified
+- [Installation] The library is now importable as a Javascript module (no more <script src="etwinBar.js"> in your HTML)
 - The "/etwinbar" folder is renamed "/src" (strong convention)
-- The entry point of the library is now "/src/index.js" (strong convention)
-- Move the demonstration page out of the lib folder for a real world usage
+- The entry point of the library is renamed "index.js" (strong convention)
+- The demonstration page is moved out of the lib folder for a real world usage
 
 ## [9.0] - 2025-08-07
 ### Modified

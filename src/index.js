@@ -1,9 +1,7 @@
-// Imports from local file (waiting for publication on npm)
-import EtwinBar from '/src/js/etwinBar.js';
-// Imports form npm 
-// import EtwinBar from 'etwinbar';
+/**
+ * Main entry point of the library. Keep this file named "index.js" 
+ * and placed at the root of the /src folder (strong conventions)
+ */
 
-const footer = new EtwinBar();
-footer.addCssLink("/src/css/etwinBar.css");
-footer.addEtwinBarContainer();
-footer.addFullEtwinFooter();
+export {default} from '/src/js/EtwinBar.js';
+
