@@ -3,31 +3,31 @@
  * "Thanks to" block, "Staff" block, etc.)
  */
 #etwinFooter {
-	min-width:100%;
-	margin:auto 0 0 0;
-	padding:3.9rem 1.35rem 6rem;
-	box-sizing:border-box;
-	display:flex;
-	flex-direction:row;
-	flex-wrap:wrap;
-	justify-content:center;
-	align-items:stretch;
-	font-size:0.875rem;
-	line-height:1.15rem;
-	font-family:Segoe UI, Lucida Grande, Trebuchet MS, Arial, lucida sans unicode, sans-serif;
-	color:#701000;
+    min-width:100%;
+    margin:auto 0 0 0;
+    padding:3.9rem 1.35rem 6rem;
+    box-sizing:border-box;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:stretch;
+    font-size:0.875rem;
+    line-height:1.15rem;
+    font-family:Segoe UI, Lucida Grande, Trebuchet MS, Arial, lucida sans unicode, sans-serif;
+    color:#701000;
 }
 
 #etwinFooter p {
-	margin: 5px 0;
+    margin: 5px 0;
 }
 
 #etwinFooter a,
 #etwinFooter button {
-	color: #c54508;
+    color: #c54508;
 }
 #etwinFooter a {
-	white-space:nowrap;
+    white-space:nowrap;
 }
 #etwinFooter a:hover,
 #etwinFooter a:focus,
@@ -35,114 +35,114 @@
 #etwinFooter button:hover,
 #etwinFooter button:focus,
 #etwinFooter button:active {
-	color: #701000;
+    color: #701000;
 }
 
 #etwinFooter h3 {
-	margin:0 auto 10px auto;
-	text-align:center;
-	font-size: 1em;
+    margin:0 auto 10px auto;
+    text-align:center;
+    font-size: 1em;
 }
 
 #etwinFooter ul {
-	padding: 0;
-	margin: 0;
-	list-style-type: none;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
 }
 #etwinFooter li {
-	padding-bottom:10px;
+    padding-bottom:10px;
 }
 
 #etwinFooter hr {
-	width:100%;
-	margin:1em 0;
-	border:1px solid #bd7e49;
+    width:100%;
+    margin:1em 0;
+    border:1px solid #bd7e49;
 }
 
 #etwinFooter .box {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
-	flex-direction: column;
-	flex: 1 0 90%;
-	min-width: 152px;
-	order: 1;
-	margin: 7px 4px;
-	padding: 1.4em;
-	background: #fffcf4;
-	border-radius: 4px;
-	border: 1px solid #bd7e49;
-	border-bottom-width: 4px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    flex: 1 0 90%;
+    min-width: 152px;
+    order: 1;
+    margin: 7px 4px;
+    padding: 1.4em;
+    background: #fffcf4;
+    border-radius: 4px;
+    border: 1px solid #bd7e49;
+    border-bottom-width: 4px;
 }
 
 #etwinFooter .box.small {
-	flex: 1 1 40%;
+    flex: 1 1 40%;
 }
 #etwinFooter .box.wide ul {
-	margin:auto;
-	display:flex;
-	justify-content:center;
-	flex-wrap:wrap;
-	column-gap:1em;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    column-gap:1em;
 }
 #etwinFooter .box.noborder {
-	border:none;
+    border:none;
 }
 /* Hack to force the next flex block to go to the next line */
 #etwinFooter .break {
-	flex-basis:100%;
+    flex-basis:100%;
 }
 #etwinFooter .box.description {
-	order: 0;
-	padding-top: 2.2em;
+    order: 0;
+    padding-top: 2.2em;
 }
 
 #etwinFooter .etwin-logo {
-	position: absolute;
-	width: 63px;
-	height: 55px;
-	top: 0;
-	left: 50%;
-	transform: translate(-50%, -60%);
+    position: absolute;
+    width: 63px;
+    height: 55px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -60%);
 }
 #etwinFooter .etwin-logo .contour {
-	fill: #bd7e49;
+    fill: #bd7e49;
 }
 
 #etwinFooter .etwin-logo .white {
-	fill: white;
+    fill: white;
 }
 
 #etwinFooter .etwin-logo .shadow {
-	fill: #f1d1b1; /* lighten(#bd7e49, ~39%) */
+    fill: #f1d1b1; /* lighten(#bd7e49, ~39%) */
 }
 
 #etwinFooter .status svg {
-	height: 0.9em;
-	margin-right: 0.3em;
+    height: 0.9em;
+    margin-right: 0.3em;
 }
 
 #etwinFooter .versionId {
-	flex-direction: row;
+    flex-direction: row;
 }
 
 #etwinFooter .versionId span {
-	margin-right: 1.6em;
+    margin-right: 1.6em;
 }
 
 #etwinFooter .hidden {
-	display:none;
+    display:none;
 }
 
 @media only screen and (min-width: 768px) {
-	#etwinFooter .box {
-		order: initial;
-		min-width: 0;
-		flex: 2.5;
-	}
+    #etwinFooter .box {
+        order: initial;
+        min-width: 0;
+        flex: 2.5;
+    }
 
-	#etwinFooter .box.small {
-		flex: 1;
-	}
+    #etwinFooter .box.small {
+        flex: 1;
+    }
 }
