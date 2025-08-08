@@ -123,12 +123,14 @@
     margin-right: 0.3em;
 }
 
-#etwinFooter .versionId {
-    flex-direction: row;
+#etwinFooter .technical {
+    margin-top:1em;
+    display:flex;
 }
-
-#etwinFooter .versionId span {
-    margin-right: 1.6em;
+#etwinFooter .technical li {
+    margin-right:1.6em;
+    padding-bottom:0;
+    white-space:nowrap;
 }
 
 #etwinFooter .hidden {
