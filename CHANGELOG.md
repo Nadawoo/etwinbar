@@ -3,8 +3,12 @@ This changelog is formatted as recommended by [Keep a Changelog](https://keepach
 
 ## [Unreleased]
 ### Modified
-- The blocks to hide are now defined in the config file (no more in a dataset HTML attribute)
-- The block about version/commit/server (below the "alpha" block) can be hidden
+- Hiding blocks:
+    - The blocks to hide are now defined in the config file (no more in a dataset HTML attribute)
+    - The block about version/commit/server (below the "alpha" block) can be hidden
+- The EtwinBar's styles are loaded before the user's ones, so:
+    1. In case of conflicts between styles, the user's styles are preserved
+    2. The user can override the EtwinBar's styles to deeply customise the footer
 
 ### Fixed
 - Fix indentation size in the HTML template and the CSS

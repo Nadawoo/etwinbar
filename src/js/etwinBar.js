@@ -160,10 +160,11 @@ export default class EtwinBar {
      */
     addCssLink(cssPath) {
         
+        const head = document.head;
         const link = document.createElement("link");
         link.rel = "stylesheet";
         link.href = cssPath;
-        document.head.appendChild(link);
+        head.insertBefore(link, head.firstChild);
     }
 
 
@@ -260,7 +261,8 @@ export default class EtwinBar {
             }
         `;
         // Write the new style rules in the head of the page
-        document.head.appendChild(styleNode);
+        let head = document.head;
+        head.insertBefore(styleNode, head.querySelector("link[rel='stylesheet']").nextSibling);
     }
 
 
