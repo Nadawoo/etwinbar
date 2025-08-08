@@ -4,6 +4,7 @@ This changelog is formatted as recommended by [Keep a Changelog](https://keepach
 ## [Unreleased]
 ### Modified
 - The blocks to hide are now defined in the config file (no more in a dataset HTML attribute)
+- The block about version/commit/server (below the "alpha" block) can be hidden
 
 ### Fixed
 - Fix indentation size in the HTML template and the CSS
