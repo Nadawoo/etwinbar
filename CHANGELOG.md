@@ -9,6 +9,7 @@ This changelog is formatted as recommended by [Keep a Changelog](https://keepach
 - The EtwinBar's styles are loaded before the user's ones, so:
     1. In case of conflicts between styles, the user's styles are preserved
     2. The user can override the EtwinBar's styles to deeply customise the footer
+- Identical background color for the footer and the blocks for a prettier result
 
 ### Fixed
 - Fix indentation size in the HTML template and the CSS
