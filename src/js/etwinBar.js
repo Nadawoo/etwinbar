@@ -226,12 +226,10 @@ export default class EtwinBar {
                 this.populateBlock("#etwinFooter .thanks p", configs.thanks.join(', '));
                 // Apply the customized styles
                 this.applyCustomStyles(configs.design);
+                // Hide the blocks the user doesn't want
+                this.hideBlocks(configs.hiddenBlocks);
             }
         });
-
-        // Hide the blocks the user doesn't want
-        let hiddenBlocks = this.parseDatasetList(document.querySelector("#etwinFooter"), "hiddenblocks");	
-        this.hideBlocks(hiddenBlocks);
     }
 
 
@@ -270,6 +268,8 @@ export default class EtwinBar {
      * Get the content of a data- attribute and convert it to a JS list.
      * Ex: <div data-members="alice, bob"></div>
      *     will be converted to ["alice", "bob"]
+     * Example of usage:
+     *     let hiddenBlocks = this.parseDatasetList(document.querySelector("#etwinFooter"), "hiddenblocks");
      *
      * @param {Object} element - The HTML element owning the data- attribute
      *				 Ex: document.querySelector("#myElement")

@@ -73,11 +73,13 @@ You can find a demonstration in the **index.htm** page.
 Ensure that the file **/etwinbar/src/config.json** exists. If not, create it by renaming the file **config.sample.json** to **config.json**.
 
 ## How to hide blocks
-You can hide the blocks you don't need by listing them in the "hiddenblocks" data attribute:
-```html
-<section id="etwinFooter" data-hiddenblocks="staff, thanks">
+Open the **config.json** file and put the names of the blocks to hide in the **"hiddenBlocks"** subkey. Example:
+```json
+"hiddenBlocks": [
+    "staff",
+    "thanks"
+]
 ```
-The items must be separated by a comma.
 
 Allowed values :
 - staff : The "Staff" block

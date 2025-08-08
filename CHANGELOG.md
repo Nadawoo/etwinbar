@@ -1,6 +1,10 @@
 # Changelog for EtwinBar
 This changelog is formatted as recommended by [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
+## [Unreleased]
+### Modified
+- The blocks to hide are now defined in the config file (no more in a dataset HTML attribute)
+
 ## [10.0] - 2025-08-07
 ### Modified
 - [Installation] The library is now importable as a Javascript module (no more <script src="etwinBar.js"> in your HTML)
