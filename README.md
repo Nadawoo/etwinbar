@@ -138,7 +138,8 @@ If a link is empty (""), the default value for this link will be applied (genera
 ## How to change the style of the footer
 Open the **config.json** file and change the values in the subkeys of the "design" key:
 
-- backgroundColor : Color of the background of the blocks
+- footerBackgroundColor : Color of the background of the footer
+- boxBackgroundColor : Color of the background of the blocks. We recommend to set the same color as for *footerBackgroundColor* for a prettier and modern result.
 - borderColor : Color of the border of the blocks
 - textColor : Color of the text in the footer
 - linkColor : Color of the links in the footer
