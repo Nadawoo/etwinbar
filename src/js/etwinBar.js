@@ -243,10 +243,10 @@ export default class EtwinBar {
         let styleNode = document.createElement('style');
         styleNode.textContent = `
             #etwinFooter {
-                background-color: ${stylesValues.backgroundColor};
+                background-color: ${stylesValues.footerBackgroundColor};
             }
             #etwinFooter .box {
-                background-color: ${stylesValues.backgroundColor};
+                background-color: ${stylesValues.boxBackgroundColor};
                 border-color: ${stylesValues.borderColor};
                 color: ${stylesValues.textColor};
             }

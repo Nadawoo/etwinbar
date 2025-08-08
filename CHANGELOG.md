@@ -2,6 +2,8 @@
 This changelog is formatted as recommended by [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 ## [Unreleased]
+### Added
+- New parameter to customise the global background of the footer
 ### Modified
 - Hiding blocks:
     - The blocks to hide are now defined in the config file (no more in a dataset HTML attribute)
