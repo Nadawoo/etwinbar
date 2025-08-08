@@ -229,6 +229,8 @@ export default class EtwinBar {
                 this.applyCustomStyles(configs.design);
                 // Hide the blocks the user doesn't want
                 this.hideBlocks(configs.hiddenBlocks);
+                // Set custom values for the links in the "You can contribute" text
+                this.replaceContributionsLinks(configs.mySite);
             }
         });
     }
@@ -318,5 +320,26 @@ export default class EtwinBar {
         });
 
         containerElement.appendChild(fragment);
+    }
+    
+    
+    /**
+     * Replace the href in the <a> identified by the dataset "data-link"
+     * Example of HTML: <a data-link="myName" href="https://gitlab.com/eternaltwin">GitLab</a>
+     * 
+     * @param {Object} - replacementLinks The links of the new values for the links,
+     *                      where each key is the name of the data-* and its value 
+     *                      is your replacement link
+     */
+    replaceContributionsLinks(replacementLinks) {
+        
+        const links = document.querySelectorAll("#etwinFooter .contributions [data-link]");
+        links.forEach(a => {
+            const key = a.dataset.link;
+            const newHref = replacementLinks[key];
+            if (newHref) {
+                a.href = newHref;
+            }
+        });
     }
 }

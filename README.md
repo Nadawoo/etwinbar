@@ -8,6 +8,7 @@
   - [How to hide blocks](#how-to-hide-blocks)
   - [How to set the content of the "Staff" block](#how-to-set-the-content-of-the-staff-block)
   - [How to set the content of the "Thanks" block](#how-to-set-the-content-of-the-thanks-block)
+  - [How to change the links in the "Contribute" block](#how-to-change-the-links-in-the-contribute-block)
   - [How to change the style of the footer](#how-to-change-the-style-of-the-footer)
   - [How to change the place of the footer](#how-to-change-the-place-of-the-footer)
 - [Is there a risk that EtwinBar breaks the CSS/JS of my site?](#is-there-a-risk-that-etwinbar-breaks-the-cssjs-of-my-site)
@@ -103,6 +104,7 @@ If a name contains quotes, don't forget to escape them with a backslash (\\") to
     "Super \"Califragil\" Istic"
 ]
 ```
+
 ## How to set the content of the "Thanks" block
 Open the **config.json** file and put the names you want in the **"thanks"** subkey. Example:
 ```json
@@ -119,6 +121,20 @@ If a name contains quotes, don't forget to escape them with a backslash (\\") to
     "Super \"Califragil\" Istic"
 ]
 ```
+
+## How to change the links in the "Contribute" block
+Open the **config.json** file and put the links to you own git repository, wkiki page, etc., in the **"mySite"** subkey. Example:
+```json
+"mySite": {
+    "git": "https://gitlab.com/xxxxx",
+    "wiki": "https://wiki.eternal-twin.net/xxxxx",
+    "translate": "https://crowdin.com/xxxxx",
+    "discord": "https://discord.com/xxxxx",
+    "forum": "https://eternaltwin.org/forum/xxxxx"
+}
+```
+If a link is empty (""), the default value for this link will be applied (general links to Eternaltwin, not related to a specific game).
+
 ## How to change the style of the footer
 Open the **config.json** file and change the values in the subkeys of the "design" key:
 

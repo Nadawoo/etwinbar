@@ -138,6 +138,20 @@
     display:none;
 }
 
+/* List displayed in one line, with a dot between each elements */
+#etwinFooter ul.inline {
+  list-style:none;
+}
+#etwinFooter ul.inline li {
+  display:inline;
+}
+#etwinFooter ul.inline li::after {
+  content:" • "; /* point médian avec espaces autour */
+}
+#etwinFooter ul.inline li:last-child::after {
+  content:"";
+}
+
 @media only screen and (min-width: 768px) {
     #etwinFooter .box {
         order: initial;

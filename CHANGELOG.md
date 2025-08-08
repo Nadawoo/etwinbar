@@ -3,7 +3,8 @@ This changelog is formatted as recommended by [Keep a Changelog](https://keepach
 
 ## [Unreleased]
 ### Added
-- New parameter to customise the global background of the footer
+- New config parameter to customise the global background of the footer
+- New config parameters to customise the links in the "Participations are welcome" block
 ### Modified
 - Hiding blocks:
     - The blocks to hide are now defined in the config file (no more in a dataset HTML attribute)

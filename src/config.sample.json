@@ -1,4 +1,11 @@
 {
+    "mySite": {
+        "git": "",
+        "wiki": "",
+        "translate": "",
+        "discord": "",
+        "forum": ""
+    },
     "hiddenBlocks": [],
     "design": {
         "footerBackgroundColor": "#080824",
