@@ -241,7 +241,9 @@ export default class EtwinBar {
      * (see the README.md for more informations)
      */
     async applyCustomStyles(stylesValues) {
-
+        
+        let logoShadowColor = this.getLogoShadowColor(stylesValues.logoColor);
+        
         let styleNode = document.createElement('style');
         styleNode.textContent = `
             #etwinFooter {
@@ -264,13 +266,65 @@ export default class EtwinBar {
             #etwinFooter .etwin-logo .contour {
                 fill: ${stylesValues.logoColor};
             }
+            #etwinFooter .etwin-logo .shadow {
+                fill: ${logoShadowColor};
+            }
         `;
         // Write the new style rules in the head of the page
         let head = document.head;
         head.insertBefore(styleNode, head.querySelector("link[rel='stylesheet']").nextSibling);
     }
+    
+    
+    /**
+     * Calculate the RGB color for the shadow logo, slightly lighter than 
+     * the main logo color
+     */
+    getLogoShadowColor(mainLogoColor) {
+        
+        // Convertir la couleur en RGB
+        const rgb = this.cssColorToRgb(mainLogoColor);
 
+        if (!rgb) return;
 
+        // Créer une version plus claire (ex: 80% du chemin vers blanc)
+        const lighter = {
+            r: Math.round(rgb.r + (255 - rgb.r) * 0.8),
+            g: Math.round(rgb.g + (255 - rgb.g) * 0.8),
+            b: Math.round(rgb.b + (255 - rgb.b) * 0.8),
+        };
+
+        return `rgb(${lighter.r}, ${lighter.g}, ${lighter.b})`;
+    }
+    
+    
+    /**
+     * Get the RGB values from a color.
+     * 
+     * @param {String} colorString - Color in any format (named color, hexadecimal...)
+     * @para {Object}
+     */
+    cssColorToRgb(color) {
+        
+        const temp = document.createElement("div");
+        temp.style.color = color;
+        document.body.appendChild(temp);
+
+        const rgb = getComputedStyle(temp).color;
+        document.body.removeChild(temp);
+
+        // Expected result: "rgb(r, g, b)" or "rgba(r, g, b, a)"
+        const match = rgb.match(/rgba?\((\d+), (\d+), (\d+)/);
+        if (!match) return null;
+        
+        return {
+            r: parseInt(match[1], 10),
+            g: parseInt(match[2], 10),
+            b: parseInt(match[3], 10),
+        };
+    }
+    
+    
     /**
      * Get the content of a data- attribute and convert it to a JS list.
      * Ex: <div data-members="alice, bob"></div>
