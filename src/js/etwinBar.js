@@ -315,7 +315,7 @@ export default class EtwinBar {
 
         games.forEach(game => {
             const newSiteItem = document.createElement('li');
-            newSiteItem.innerHTML = `<a href="${game.url}" title="${game.description} (S'ouvre dans un nouvel onglet)" target="_blank" rel="noopener">${game.name}</a>`;
+            newSiteItem.innerHTML = `<a href="${game.url}" title="${game.description} (S'ouvre dans un nouvel onglet)" lang="en" target="_blank" rel="noopener">${game.name}</a>`;
             fragment.appendChild(newSiteItem);
         });
 
