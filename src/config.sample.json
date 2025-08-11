@@ -25,24 +25,24 @@
         "textColor": "white",
         "linkColor": "#84e100",
         "logoColor": "black",
-        "iconsStyle": "golden"
+        "iconsPath": "img/default/icons/pink"
     },
     "staff": [
         {
             "name": "John \"Johnny\" Doe",
-            "rank": "administrator"
+            "iconName": "administrator.png"
         },
         {
             "name": "Super \"Califragil\" Istic",
-            "rank": "developer"
+            "iconName": "developer.png"
         },
         {
             "name": "Chim \"Chimney\" Cheree",
-            "rank": "graphist"
+            "iconName": "graphist.png"
         },
         {
             "name": "Darude Sandstorm",
-            "rank": "helper"
+            "iconName": "helper.png"
         }
     ],
     "thanks": [

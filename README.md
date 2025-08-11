@@ -98,19 +98,30 @@ Open the **config.json** file and put the names you want in the **"staff"** subk
 "staff": [
     {
         "name": "John \"Johnny\" Doe",
-        "rank": "administrator"
+        "iconName": "administrator.png"
     },
     {
         "name": "Super \"Califragil\" Istic",
-        "rank": "developer"
+        "iconName": "developer.png"
     }
 ]
 ```
-The **rank** value defines the icon before the member name. Allowed values:
-- administrator
-- developer
-- graphist
-- helper
+The value of **iconName** is the name of the icon file located in the folder defined in the **design.iconsPath** key.
+Example:
+```json
+"design": {
+    "iconsPath": "img/default/icons/pink"
+},
+"staff": [
+    {
+        "name": "John Doe",
+        "iconName": "administrator.png"
+    }
+]
+```
+This member will have the icon located in img/default/icons/pink/administrator.png
+
+If you need more or different icons, you can put your own ones in the **img/custom/** folder.
 
 If a name contains quotes, don't forget to escape them with a backslash (\\") to keep the JSON valid:
 ```json
@@ -176,9 +187,10 @@ Open the **config.json** file and change the values in the subkeys of the "desig
 - textColor : Color of the text in the footer
 - linkColor : Color of the links in the footer
 - logoColor : Color of the Eternatwin's logo at the top of the main block
-- iconsStyle: Style of the icons for the staff members (administrator, developer...). Allowed values:
-  - pink
-  - golden
+- iconsPath: The path to the icons for the staff members (administrator, developer...). Allowed values:
+  - img/default/icons/pink : default icons in the eMush style
+  - img/default/icons/golden : default icons in the MyHordes style
+  - img/custom : you can put here your own icon images
 
 If you want to add or change other styles, put your rules in your own CSS files. Never put them in the CSS files of EtwinBar, as they would be erased in case of update.
 
