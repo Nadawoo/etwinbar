@@ -195,7 +195,7 @@ If you want to add or change other styles, put your rules in your own CSS files.
 
 ### Pre-made designs
 If you want a pre-made design for your footer, copy-paste one of these sets of parameters in the **design** key.
-#### DinoRPG style (beige)
+#### Beige
 ```json
 "design": {
     "footerBackgroundColor": "",
@@ -207,7 +207,7 @@ If you want a pre-made design for your footer, copy-paste one of these sets of p
     "iconsPath": "img/default/icons/pink"
 }
 ```
-#### eMush style (night blue)
+#### Night blue
 ```json
 "design": {
     "footerBackgroundColor": "#080824",
