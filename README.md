@@ -178,8 +178,8 @@ Example for removing the "Translate on Crowdin" sentence:
 ```
 
 ## How to change the style of the footer
-Open the **config.json** file and change the values in the subkeys of the "design" key:
-
+### Parameters
+Open the **config.json** file and change the values in the subkeys of the **design** key:
 - footerBackgroundColor : Color of the background of the footer
 - boxBackgroundColor : Color of the background of the blocks. We recommend to set the same color as for *footerBackgroundColor* for a prettier and modern result.
 - borderColor : Color of the border of the blocks
@@ -192,6 +192,57 @@ Open the **config.json** file and change the values in the subkeys of the "desig
   - img/custom : you can put here your own icon images
 
 If you want to add or change other styles, put your rules in your own CSS files. Never put them in the CSS files of EtwinBar, as they would be erased in case of update.
+
+### Pre-made designs
+If you want a pre-made deign for your footer, copy-paste one of this set of parameters in the **design** key.
+#### DinoRPG style (beige)
+```json
+"design": {
+    "footerBackgroundColor": "",
+    "blockBackgroundColor": "#fffcf4",
+    "borderColor": "#bd7e49",
+    "textColor": "#701000",
+    "linkColor": "#c54508",
+    "logoColor": "#bd7e49",
+    "iconsPath": "img/default/icons/pink"
+}
+```
+#### eMush style (night blue)
+```json
+"design": {
+    "footerBackgroundColor": "#080824",
+    "blockBackgroundColor": "#080824",
+    "borderColor": "rgba(136,166,254,0.3)",
+    "textColor": "white",
+    "linkColor": "#84e100",
+    "logoColor": "black",
+    "iconsPath": "img/default/icons/pink"
+}
+```
+#### Black on white
+```json
+"design": {
+    "footerBackgroundColor": "",
+    "blockBackgroundColor": "",
+    "borderColor": "black",
+    "textColor": "black",
+    "linkColor": "darkred",
+    "logoColor": "black",
+    "iconsPath": "img/default/icons/pink"
+}
+```
+#### Dark mode (white on black)
+```json
+"design": {
+    "footerBackgroundColor": "black",
+    "blockBackgroundColor": "black",
+    "borderColor": "white",
+    "textColor": "white",
+    "linkColor": "#84e100",
+    "logoColor": "black",
+    "iconsPath": "img/default/icons/pink"
+}
+```
 
 ## How to change the place of the footer
 By default, the EtwinBar's footer is placed at the end of the &lt;footer&gt; tag. You can place it elsewhere by adding this tag where you want in your HTML:
