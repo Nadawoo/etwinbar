@@ -24,12 +24,26 @@
         "borderColor": "rgba(136,166,254,0.3)",
         "textColor": "white",
         "linkColor": "#84e100",
-        "logoColor": "black"
+        "logoColor": "black",
+        "iconsStyle": "golden"
     },
     "staff": [
-        "John \"Johnny\" Doe",
-        "Super \"Califragil\" Istic",
-        "Chim \"Chimney\" Cheree"
+        {
+            "name": "John \"Johnny\" Doe",
+            "rank": "administrator"
+        },
+        {
+            "name": "Super \"Califragil\" Istic",
+            "rank": "developer"
+        },
+        {
+            "name": "Chim \"Chimney\" Cheree",
+            "rank": "graphist"
+        },
+        {
+            "name": "Darude Sandstorm",
+            "rank": "helper"
+        }
     ],
     "thanks": [
         "Lorem",

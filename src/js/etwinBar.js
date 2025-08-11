@@ -87,16 +87,17 @@ export default class EtwinBar {
      * 
      * @param {String} listSelector
      * @param {Array} listItems
+     * @param {String} iconsStyle
      */
-    async populateList(listSelector, listItems) {
+    async populateList(listSelector, listItems, iconsStyle) {
 
         let container = await document.querySelector(listSelector);
         container.innerHTML = "";
 
         let fragment = document.createDocumentFragment();
-        listItems.forEach(listItem => {
+        listItems.forEach(staffMember => {
             const newItem = document.createElement('li');
-            newItem.innerText = listItem;
+            newItem.innerHTML = `<img src="src/img/icons/${iconsStyle}/${staffMember.rank}.png" alt="${staffMember.rank}"> ${staffMember.name}`;
             fragment.appendChild(newItem);
         });
 
@@ -220,10 +221,10 @@ export default class EtwinBar {
         const configFilePath = "/src/config.json";
         this.isFile(configFilePath).then(async isFile => {
             if(isFile) {
-                let configs = await this.loadJson(configFilePath);
+                let configs = await this.loadJson(configFilePath);console.log(configs.design);
                 // Add the texts in the blocks (Games, Staff, Thanks)
                 this.populateGamesBlock();
-                this.populateList("#etwinFooter .staff ul", configs.staff);
+                this.populateList("#etwinFooter .staff ul", configs.staff, configs.design.iconsStyle);
                 this.populateBlock("#etwinFooter .thanks p", configs.thanks.join(', '));
                 // Apply the customized styles
                 this.applyCustomStyles(configs.design);

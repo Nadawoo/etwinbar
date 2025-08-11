@@ -96,14 +96,25 @@ Allowed values :
 Open the **config.json** file and put the names you want in the **"staff"** subkey. Example:
 ```json
 "staff": [
-    "John Doe",
-    "Sarah Connor"
+    {
+        "name": "John \"Johnny\" Doe",
+        "rank": "administrator"
+    },
+    {
+        "name": "Super \"Califragil\" Istic",
+        "rank": "developer"
+    }
 ]
 ```
+The **rank** value defines the icon before the member name. Allowed values:
+- administrator
+- developer
+- graphist
+- helper
+
 If a name contains quotes, don't forget to escape them with a backslash (\\") to keep the JSON valid:
 ```json
-"staff": [
-    "Super \"Califragil\" Istic"
+"name": "John \"Johnny\" Doe",
 ]
 ```
 
@@ -165,6 +176,9 @@ Open the **config.json** file and change the values in the subkeys of the "desig
 - textColor : Color of the text in the footer
 - linkColor : Color of the links in the footer
 - logoColor : Color of the Eternatwin's logo at the top of the main block
+- iconsStyle: Style of the icons for the staff members (administrator, developer...). Allowed values:
+  - pink
+  - golden
 
 If you want to add or change other styles, put your rules in your own CSS files. Never put them in the CSS files of EtwinBar, as they would be erased in case of update.
 

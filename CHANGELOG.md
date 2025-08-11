@@ -2,6 +2,8 @@
 This changelog is formatted as recommended by [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 ## [Unreleased]
+### Added
+- [Config] You can set icons for the staff members (administrator, developer, graphist, helper) 
 ### Modified
 - [Config] The "hiddenBlocks" list is replaced by a "blocksVisibility" object. The visibility is set by a 0/1 value and no more adding/removing keys.
 
