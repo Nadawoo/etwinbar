@@ -123,17 +123,27 @@ If a name contains quotes, don't forget to escape them with a backslash (\\") to
 ```
 
 ## How to change the links in the "Contribute" block
-Open the **config.json** file and put the links to you own git repository, wkiki page, etc., in the **"mySite"** subkey. Example:
+Open the **config.json** file and put the links to you own git repository, wiki page, etc., in the **"mySite"** subkey. Example:
 ```json
 "mySite": {
     "git": "https://gitlab.com/xxxxx",
     "wiki": "https://wiki.eternal-twin.net/xxxxx",
     "translate": "https://crowdin.com/xxxxx",
     "discord": "https://discord.com/xxxxx",
-    "forum": "https://eternaltwin.org/forum/xxxxx"
+    "forum": "https://eternaltwin.org/forum/xxxxx",
+    "rules": "https://eternaltwin.org/rules/xxxxx",
+    "legal": "https://eternaltwin.org/legal/xxxxx"
 }
 ```
-If a link is empty (""), the default value for this link will be applied (general links to Eternaltwin, not related to a specific game).
+If a link is empty ("") or missing, the default value for this link will be applied (general links to Eternaltwin, not related to a specific game).
+
+If a link is not relevant for your site, you can totally remove it by setting its value to **null**.
+Example for removing the "Translate on Crowdin" sentence:
+```json
+"mySite": {
+    "translate": null
+}
+```
 
 ## How to change the style of the footer
 Open the **config.json** file and change the values in the subkeys of the "design" key:

@@ -396,7 +396,11 @@ export default class EtwinBar {
         links.forEach(a => {
             const key = a.dataset.link;
             const newHref = replacementLinks[key];
-            if (newHref) {
+            if(newHref === null) {
+                // Remove the text block if the link is "null"
+                a.parentNode.remove();
+            } else if(newHref) {
+                // Customise the value
                 a.href = newHref;
             }
         });

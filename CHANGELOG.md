@@ -3,6 +3,7 @@ This changelog is formatted as recommended by [Keep a Changelog](https://keepach
 
 ## [Unreleased]
 ### Added
+- [Config] You can totally remove a link by setting it to "null" in the config file
 - [Config] New parameters to cutomise the "Legal mentions" and "Rules" links
 ### Modified
 - [Config] The "boxBackgroundColor" parameter is renamed "blockBackgroundColor"
