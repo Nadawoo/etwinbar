@@ -229,8 +229,10 @@ export default class EtwinBar {
                 this.applyCustomStyles(configs.design);
                 // Hide the blocks the user doesn't want
                 this.hideBlocks(configs.hiddenBlocks);
-                // Set custom values for the links in the "You can contribute" text
-                this.replaceContributionsLinks(configs.mySite);
+                // Set custom values for the links
+                this.replaceLinksHref("#etwinFooter .contributions [data-link]", configs.mySite);
+                this.replaceLinksHref("#etwinFooter .alpha [data-link]", configs.mySite);
+                this.replaceLinksHref("#etwinFooter .legal [data-link]", configs.mySite);
             }
         });
     }
@@ -378,16 +380,19 @@ export default class EtwinBar {
     
     
     /**
-     * Replace the href in the <a> identified by the dataset "data-link"
+     * Replace the href value in the <a> identified by the dataset "data-link"
      * Example of HTML: <a data-link="myName" href="https://gitlab.com/eternaltwin">GitLab</a>
      * 
-     * @param {Object} - replacementLinks The links of the new values for the links,
+     * @param {String} selector - The DOM selector to the container of the links.
+     *                      Always prefix it with #etwinFooter to avoid modifiying
+     *                      the user's HTML. 
+     * @param {Object} replacementLinks - The links of the new values for the links,
      *                      where each key is the name of the data-* and its value 
      *                      is your replacement link
      */
-    replaceContributionsLinks(replacementLinks) {
+    replaceLinksHref(selector, replacementLinks) {
         
-        const links = document.querySelectorAll("#etwinFooter .contributions [data-link]");
+        const links = document.querySelectorAll(selector);
         links.forEach(a => {
             const key = a.dataset.link;
             const newHref = replacementLinks[key];

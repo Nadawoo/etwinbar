@@ -2,6 +2,8 @@
 This changelog is formatted as recommended by [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 ## [Unreleased]
+### Added
+- [Config] New parameters to cutomise the "Legal mentions" and "Rules" links
 ### Modified
 - [Config] The "boxBackgroundColor" parameter is renamed "blockBackgroundColor"
 
