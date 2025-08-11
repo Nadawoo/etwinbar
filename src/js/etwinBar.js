@@ -399,10 +399,29 @@ export default class EtwinBar {
             if(newHref === null) {
                 // Remove the text block if the link is "null"
                 a.parentNode.remove();
+            } else if(this.isEmail(newHref) === true) {
+                // If the link is an email, prefix it with "mailto"
+                a.href = `mailto:${newHref}`;
             } else if(newHref) {
-                // Customise the value
+                // Ordinary http:// link
                 a.href = newHref;
             }
         });
+    }
+    
+    
+    /**
+     * Check if a string is an email (example@example.com) or not
+     * 
+     * @param {String} link - The string to test
+     * @returns {Boolean}
+     */
+    isEmail(link) {
+        
+        const input = document.createElement('input');
+        input.type = 'email';
+        input.value = link;
+        
+        return input.checkValidity();
     }
 }

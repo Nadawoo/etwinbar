@@ -136,10 +136,11 @@ Open the **config.json** file and put the links to you own git repository, wiki 
     "contact": "https://discord.com/zzzzz"
 }
 ```
-If a link is an email address (useful for the "contact" link), prefix it with **mailto:**:
+
+Links can be email addresses (useful for the "Contact" link):
 ```json
 "mySite": {
-    "contact": "mailto:admin@example.com
+    "contact": "admin@example.com"
 }
 ```
 

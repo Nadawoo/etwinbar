@@ -6,6 +6,7 @@ This changelog is formatted as recommended by [Keep a Changelog](https://keepach
 - [Config] You can totally remove a link by setting it to "null" in the config file
 - [Config] The "Legal mentions" and "Rules" links can now be customised too
 - Add a "Contact" link in the footer
+- The library supports emails as cutom links
 ### Modified
 - [Config] The "boxBackgroundColor" parameter is renamed "blockBackgroundColor"
 
