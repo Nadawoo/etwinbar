@@ -132,9 +132,17 @@ Open the **config.json** file and put the links to you own git repository, wiki 
     "discord": "https://discord.com/xxxxx",
     "forum": "https://eternaltwin.org/forum/xxxxx",
     "rules": "https://eternaltwin.org/rules/xxxxx",
-    "legal": "https://eternaltwin.org/legal/xxxxx"
+    "legal": "https://eternaltwin.org/legal/xxxxx",
+    "contact": "https://discord.com/zzzzz"
 }
 ```
+If a link is an email address (useful for the "contact" link), prefix it with **mailto:**:
+```json
+"mySite": {
+    "contact": "mailto:admin@example.com
+}
+```
+
 If a link is empty ("") or missing, the default value for this link will be applied (general links to Eternaltwin, not related to a specific game).
 
 If a link is not relevant for your site, you can totally remove it by setting its value to **null**.

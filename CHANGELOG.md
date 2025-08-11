@@ -4,7 +4,8 @@ This changelog is formatted as recommended by [Keep a Changelog](https://keepach
 ## [Unreleased]
 ### Added
 - [Config] You can totally remove a link by setting it to "null" in the config file
-- [Config] New parameters to cutomise the "Legal mentions" and "Rules" links
+- [Config] The "Legal mentions" and "Rules" links can now be customised too
+- Add a "Contact" link in the footer
 ### Modified
 - [Config] The "boxBackgroundColor" parameter is renamed "blockBackgroundColor"
 
