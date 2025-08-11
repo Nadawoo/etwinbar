@@ -60,7 +60,7 @@
     border:1px solid #bd7e49;
 }
 
-#etwinFooter .box {
+#etwinFooter .block {
     position: relative;
     display: flex;
     justify-content: center;
@@ -77,24 +77,24 @@
     border-bottom-width: 4px;
 }
 
-#etwinFooter .box.small {
+#etwinFooter .block.small {
     flex: 1 1 40%;
 }
-#etwinFooter .box.wide ul {
+#etwinFooter .block.wide ul {
     margin:auto;
     display:flex;
     justify-content:center;
     flex-wrap:wrap;
     column-gap:1em;
 }
-#etwinFooter .box.noborder {
+#etwinFooter .block.noborder {
     border:none;
 }
 /* Hack to force the next flex block to go to the next line */
 #etwinFooter .break {
     flex-basis:100%;
 }
-#etwinFooter .box.description {
+#etwinFooter .block.description {
     order: 0;
     padding-top: 2.2em;
 }
@@ -153,13 +153,13 @@
 }
 
 @media only screen and (min-width: 768px) {
-    #etwinFooter .box {
+    #etwinFooter .block {
         order: initial;
         min-width: 0;
         flex: 2.5;
     }
 
-    #etwinFooter .box.small {
+    #etwinFooter .block.small {
         flex: 1;
     }
 }

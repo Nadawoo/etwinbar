@@ -1,6 +1,10 @@
 # Changelog for EtwinBar
 This changelog is formatted as recommended by [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
+## [Unreleased]
+### Modified
+- [Config] The "boxBackgroundColor" parameter is renamed "blockBackgroundColor"
+
 ## [11.0] - 2025-08-08
 ### Added
 - New config parameter to customise the global background of the footer

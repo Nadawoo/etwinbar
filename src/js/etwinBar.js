@@ -249,8 +249,8 @@ export default class EtwinBar {
             #etwinFooter {
                 background-color: ${stylesValues.footerBackgroundColor};
             }
-            #etwinFooter .box {
-                background-color: ${stylesValues.boxBackgroundColor};
+            #etwinFooter .block {
+                background-color: ${stylesValues.blockBackgroundColor};
                 border-color: ${stylesValues.borderColor};
                 color: ${stylesValues.textColor};
             }
