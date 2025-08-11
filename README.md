@@ -194,7 +194,7 @@ Open the **config.json** file and change the values in the subkeys of the **desi
 If you want to add or change other styles, put your rules in your own CSS files. Never put them in the CSS files of EtwinBar, as they would be erased in case of update.
 
 ### Pre-made designs
-If you want a pre-made deign for your footer, copy-paste one of this set of parameters in the **design** key.
+If you want a pre-made deign for your footer, copy-paste one of these sets of parameters in the **design** key.
 #### DinoRPG style (beige)
 ```json
 "design": {
