@@ -9,7 +9,15 @@
         "legal": "",
         "contact": ""
     },
-    "hiddenBlocks": [],
+    "blocksVisibility": {
+        "staff" : 1,
+        "thanks" : 1,
+        "description" : 1,
+        "alpha" : 1,
+        "technical": 1,
+        "games" : 1,
+        "legal" : 1
+    },
     "design": {
         "footerBackgroundColor": "#080824",
         "blockBackgroundColor": "#080824",

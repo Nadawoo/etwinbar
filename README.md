@@ -74,12 +74,13 @@ You can find a demonstration in the **index.htm** page.
 Ensure that the file **/etwinbar/src/config.json** exists. If not, create it by renaming the file **config.sample.json** to **config.json**.
 
 ## How to hide blocks
-Open the **config.json** file and put the names of the blocks to hide in the **"hiddenBlocks"** subkey. Example:
+Open the **config.json** file and edit the values in the **blocksVisibility** key.
+The blocks with the value **0** will be hidden, the ones with **1** will be displayed.
 ```json
-"hiddenBlocks": [
-    "staff",
-    "thanks"
-]
+"blocksVisibility": {
+    "staff" : 1,
+    "thanks" : 0
+}
 ```
 
 Allowed values :
@@ -87,6 +88,7 @@ Allowed values :
 - thanks : The "Thanks to" block
 - description : The main block with the logo
 - alpha : The alert about the alpha version in the main block
+- technical : The informations about the server (version, commit number, server name)
 - games : The list of other games
 - legal : The links to the legal mentions
 

@@ -228,7 +228,7 @@ export default class EtwinBar {
                 // Apply the customized styles
                 this.applyCustomStyles(configs.design);
                 // Hide the blocks the user doesn't want
-                this.hideBlocks(configs.hiddenBlocks);
+                this.hideBlocks(configs.blocksVisibility);
                 // Set custom values for the links
                 this.replaceLinksHref("#etwinFooter .contributions [data-link]", configs.mySite);
                 this.replaceLinksHref("#etwinFooter .alpha [data-link]", configs.mySite);
@@ -348,12 +348,14 @@ export default class EtwinBar {
     }
 
 
-    hideBlocks(hiddenBlocks) {
+    hideBlocks(blocksVisibility) {
 
-        hiddenBlocks.forEach(className => {
-            const element = document.querySelector(`#etwinFooter .${className}`);
-            if(element) {
-                element.classList.add('hidden');
+        Object.entries(blocksVisibility).forEach(([blockName, visibility]) => {
+            if(visibility === 0) {
+                const element = document.querySelector(`#etwinFooter .${blockName}`);
+                if(element) {
+                    element.classList.add('hidden');
+                }
             }
         });
     }
