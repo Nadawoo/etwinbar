@@ -125,8 +125,7 @@ If you need more or different icons, you can put your own ones in the **img/cust
 
 If a name contains quotes, don't forget to escape them with a backslash (\\") to keep the JSON valid:
 ```json
-"name": "John \"Johnny\" Doe",
-]
+"name": "John \"Johnny\" Doe"
 ```
 
 ## How to set the content of the "Thanks" block
