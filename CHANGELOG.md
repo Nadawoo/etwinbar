@@ -1,7 +1,7 @@
 # Changelog for EtwinBar
 This changelog is formatted as recommended by [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
-## [Unreleased]
+## [12.0] - 2025-08-11
 ### Added
 - [Config] You can totally remove a link by setting it to "null" in the config file
 - [Config] The "Legal mentions" and "Rules" links can now be customised too
