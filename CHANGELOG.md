@@ -1,7 +1,7 @@
 # Changelog for EtwinBar
 This changelog is formatted as recommended by [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
-## [Unreleased]
+## [13.0] - 2025-08-12
 ### Added
 - [Config] You can set icons for the staff members (administrator, developer, graphist, helper...) 
 ### Modified
