@@ -1,6 +1,9 @@
 # Changelog for EtwinBar
 This changelog is formatted as recommended by [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
+## [14.0] - 2025-08-12
+- [Config] You can change the hue of the icons
+
 ## [13.1] - 2025-08-12
 - Add models of designs in the Readme
 
