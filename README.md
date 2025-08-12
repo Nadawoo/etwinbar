@@ -1,16 +1,16 @@
 # Table of contents
 - [What is EtwinBar?](#what-is-etwinbar)
 - [How to install the Eternaltwin footer on my site?](#how-to-install-the-eternaltwin-footer-on-my-site)
-  - [1. Install the EtwinBar library](#1-install-the-etwinbar-library)
-  - [2. Set up the HTML elements](#2-set-up-the-html-elements)
+  - [1. Download the EtwinBar library](#1-download-the-etwinbar-library)
+  - [2. Initialize the library](#2-initialize-the-library)
 - [Customisation](#customisation)
   - [Prerequirement: create the config file](#prerequirement-create-the-config-file)
-  - [How to hide blocks](#how-to-hide-blocks)
-  - [How to set the content of the "Staff" block](#how-to-set-the-content-of-the-staff-block)
-  - [How to set the content of the "Thanks" block](#how-to-set-the-content-of-the-thanks-block)
-  - [How to change the links in the "Contribute" block](#how-to-change-the-links-in-the-contribute-block)
-  - [How to change the style of the footer](#how-to-change-the-style-of-the-footer)
-  - [How to change the place of the footer](#how-to-change-the-place-of-the-footer)
+  - [Hiding blocks](#hiding-blocks)
+  - [Setting the content of the "Staff" block](#setting-the-content-of-the-staff-block)
+  - [Setting the content of the "Thanks" block](#setting-the-content-of-the-thanks-block)
+  - [Changing the hyperlinks](#changing-the-hyperlinks)
+  - [Restyling the footer](#restyling-the-footer)
+  - [Moving the footer](#moving-the-footer)
 - [Is there a risk that EtwinBar breaks the CSS/JS of my site?](#is-there-a-risk-that-etwinbar-breaks-the-cssjs-of-my-site)
 
 # What is EtwinBar?
@@ -73,7 +73,7 @@ You can find a demonstration in the **index.htm** page.
 ## Prerequirement: create the config file
 Ensure that the file **/etwinbar/src/config.json** exists. If not, create it by renaming the file **config.sample.json** to **config.json**.
 
-## How to hide blocks
+## Hiding blocks
 Open the **config.json** file and edit the values in the **blocksVisibility** key.
 The blocks with the value **0** will be hidden, the ones with **1** will be displayed.
 ```json
@@ -92,7 +92,7 @@ Allowed values :
 - games : The list of other games
 - legal : The links to the legal mentions
 
-## How to set the content of the "Staff" block
+## Setting the content of the "Staff" block
 Open the **config.json** file and put the names you want in the **"staff"** subkey. Example:
 ```json
 "staff": [
@@ -128,7 +128,7 @@ If a name contains quotes, don't forget to escape them with a backslash (\\") to
 "name": "John \"Johnny\" Doe"
 ```
 
-## How to set the content of the "Thanks" block
+## Setting the content of the "Thanks" block
 Open the **config.json** file and put the names you want in the **"thanks"** subkey. Example:
 ```json
 "thanks": [
@@ -145,7 +145,7 @@ If a name contains quotes, don't forget to escape them with a backslash (\\") to
 ]
 ```
 
-## How to change the links in the "Contribute" block
+## Changing the hyperlinks
 Open the **config.json** file and put the links to you own git repository, wiki page, etc., in the **"mySite"** subkey. Example:
 ```json
 "mySite": {
@@ -177,7 +177,7 @@ Example for removing the "Translate on Crowdin" sentence:
 }
 ```
 
-## How to change the style of the footer
+## Restyling the footer
 ### Parameters
 Open the **config.json** file and change the values in the subkeys of the **design** key:
 - footerBackgroundColor : Color of the background of the footer
@@ -246,7 +246,7 @@ If you want a pre-made design for your footer, copy-paste one of these sets of p
 }
 ```
 
-## How to change the place of the footer
+## Moving the footer
 By default, the EtwinBar's footer is placed at the end of the &lt;footer&gt; tag. You can place it elsewhere by adding this tag where you want in your HTML:
 ```html
 <section id="etwinFooter"></section>
