@@ -186,6 +186,8 @@ Open the **config.json** file and change the values in the subkeys of the **desi
 - textColor : Color of the text in the footer
 - linkColor : Color of the links in the footer
 - logoColor : Color of the Eternatwin's logo at the top of the main block
+- iconsHue: Chose a value between 0 to 360 to change the hue of the icons (green, red, blue...).
+- iconsSaturation: Saturation of the icons color, in percent. 0 means grey, 300 means intense color.
 - iconsPath: The path to the icons for the staff members (administrator, developer...). Allowed values:
   - img/default/icons/pink : default icons in the eMush style
   - img/default/icons/golden : default icons in the MyHordes style

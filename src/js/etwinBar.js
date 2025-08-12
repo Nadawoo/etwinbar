@@ -272,6 +272,9 @@ export default class EtwinBar {
             #etwinFooter .etwin-logo .shadow {
                 fill: ${logoShadowColor};
             }
+            #etwinFooter .staff img {
+                filter: hue-rotate(${stylesValues.iconsHue}deg) saturate(${stylesValues.iconsSaturation}%);
+            }
         `;
         // Write the new style rules in the head of the page
         let head = document.head;

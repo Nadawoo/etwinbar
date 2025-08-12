@@ -25,6 +25,8 @@
         "textColor": "white",
         "linkColor": "#84e100",
         "logoColor": "black",
+        "iconsHue": "0",
+        "iconsSaturation": "100",
         "iconsPath": "img/default/icons/pink"
     },
     "staff": [
