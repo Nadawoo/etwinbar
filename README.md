@@ -12,6 +12,7 @@
   - [Restyling the footer](#restyling-the-footer)
   - [Moving the footer](#moving-the-footer)
 - [Is there a risk that EtwinBar breaks the CSS/JS of my site?](#is-there-a-risk-that-etwinbar-breaks-the-cssjs-of-my-site)
+- [Accessibility](#accessibility)
 
 # What is EtwinBar?
 EtwinBar is a part of the Eternaltwin project (https://eternaltwin.org/).
@@ -22,6 +23,7 @@ EtwinBar allows you to insert on your own site a footer common to all of the Ete
 - ✔️ Contains all the useful informations and links
 - ✔️ Customisable contents
 - ✔️ Responsive
+- ✔️ Accessible to people with disabilities
 - ✔️ Doesn't break your CSS or JS
 
 # How to install the Eternaltwin footer on my site?
@@ -256,3 +258,8 @@ By default, the EtwinBar's footer is placed at the end of the &lt;footer&gt; tag
 No, because all the EtwinBar's styles are prefixed with an HTML ID and all its Javascript functions are encapsulated in a class. Just follow these two intructions:
 - **Don't define an #etwinFooter ID** in your HTML. This ID is reserved by the library.
 - **Don't define an EtwinBar() class** in your Javascript. This class is reserved by the library.
+
+# Accessibility
+The footer is accessible to people with disabilities:
+- semantic structuration of the HTML
+- language attributes on foreign words
